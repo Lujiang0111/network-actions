@@ -2376,6 +2376,8 @@ add address=140.210.224.0/20 list=CNIP
 add address=140.224.0.0/16 list=CNIP
 add address=140.237.0.0/16 list=CNIP
 add address=140.240.0.0/16 list=CNIP
+add address=140.242.223.0/24 list=CNIP
+add address=140.242.224.0/24 list=CNIP
 add address=140.243.0.0/16 list=CNIP
 add address=140.246.0.0/16 list=CNIP
 add address=140.249.0.0/16 list=CNIP
