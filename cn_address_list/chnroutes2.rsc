@@ -1130,6 +1130,7 @@ add address=103.159.124.0/23 list=CNIP
 add address=103.161.220.0/23 list=CNIP
 add address=103.161.254.0/23 list=CNIP
 add address=103.162.10.0/23 list=CNIP
+add address=103.163.46.0/23 list=CNIP
 add address=103.163.180.0/24 list=CNIP
 add address=103.164.32.0/23 list=CNIP
 add address=103.165.110.0/23 list=CNIP
