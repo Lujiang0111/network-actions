@@ -855,7 +855,7 @@ add address=103.40.12.0/22 list=CNIP
 add address=103.40.192.0/22 list=CNIP
 add address=103.40.232.0/22 list=CNIP
 add address=103.40.240.0/20 list=CNIP
-add address=103.41.0.0/23 list=CNIP
+add address=103.41.0.0/22 list=CNIP
 add address=103.41.116.0/22 list=CNIP
 add address=103.41.148.0/22 list=CNIP
 add address=103.41.152.0/22 list=CNIP
