@@ -3602,7 +3602,11 @@ add address=223.160.134.0/23 list=CNIP
 add address=223.160.136.0/21 list=CNIP
 add address=223.160.144.0/20 list=CNIP
 add address=223.160.160.0/19 list=CNIP
-add address=223.160.192.0/19 list=CNIP
+add address=223.160.192.0/21 list=CNIP
+add address=223.160.200.0/22 list=CNIP
+add address=223.160.204.0/24 list=CNIP
+add address=223.160.206.0/23 list=CNIP
+add address=223.160.208.0/20 list=CNIP
 add address=223.160.224.0/21 list=CNIP
 add address=223.160.232.0/22 list=CNIP
 add address=223.160.236.0/23 list=CNIP
