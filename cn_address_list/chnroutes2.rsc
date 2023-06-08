@@ -1651,7 +1651,6 @@ add address=115.172.176.0/21 list=CNIP
 add address=115.172.192.0/18 list=CNIP
 add address=115.173.0.0/16 list=CNIP
 add address=115.174.0.0/16 list=CNIP
-add address=115.181.240.0/20 list=CNIP
 add address=115.182.0.0/15 list=CNIP
 add address=115.187.0.0/20 list=CNIP
 add address=115.192.0.0/11 list=CNIP
