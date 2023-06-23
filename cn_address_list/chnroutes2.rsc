@@ -2635,7 +2635,6 @@ add address=183.172.0.0/14 list=CNIP
 add address=183.184.0.0/13 list=CNIP
 add address=183.192.0.0/10 list=CNIP
 add address=188.131.128.0/17 list=CNIP
-add address=192.28.92.0/24 list=CNIP
 add address=192.28.94.0/24 list=CNIP
 add address=192.55.46.0/24 list=CNIP
 add address=192.55.68.0/22 list=CNIP
