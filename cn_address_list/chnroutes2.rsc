@@ -973,7 +973,7 @@ add address=103.118.60.0/22 list=CNIP
 add address=103.118.173.0/24 list=CNIP
 add address=103.120.72.0/22 list=CNIP
 add address=103.120.224.0/22 list=CNIP
-add address=103.121.52.0/24 list=CNIP
+add address=103.121.52.0/22 list=CNIP
 add address=103.121.164.0/23 list=CNIP
 add address=103.121.166.0/24 list=CNIP
 add address=103.121.252.0/22 list=CNIP
@@ -1125,7 +1125,6 @@ add address=103.223.132.0/22 list=CNIP
 add address=103.224.220.0/22 list=CNIP
 add address=103.224.228.0/23 list=CNIP
 add address=103.224.232.0/22 list=CNIP
-add address=103.226.180.0/24 list=CNIP
 add address=103.227.76.0/22 list=CNIP
 add address=103.227.80.0/22 list=CNIP
 add address=103.227.120.0/22 list=CNIP
@@ -1916,7 +1915,15 @@ add address=120.128.0.0/21 list=CNIP
 add address=120.131.0.0/20 list=CNIP
 add address=120.131.64.0/19 list=CNIP
 add address=120.131.124.0/22 list=CNIP
-add address=120.132.0.0/14 list=CNIP
+add address=120.132.0.0/18 list=CNIP
+add address=120.132.64.0/19 list=CNIP
+add address=120.132.96.0/20 list=CNIP
+add address=120.132.112.0/23 list=CNIP
+add address=120.132.116.0/22 list=CNIP
+add address=120.132.120.0/21 list=CNIP
+add address=120.132.128.0/17 list=CNIP
+add address=120.133.0.0/16 list=CNIP
+add address=120.134.0.0/15 list=CNIP
 add address=120.136.16.0/24 list=CNIP
 add address=120.136.20.0/22 list=CNIP
 add address=120.136.128.0/21 list=CNIP
@@ -2302,6 +2309,7 @@ add address=156.154.62.0/23 list=CNIP
 add address=156.154.65.0/24 list=CNIP
 add address=156.154.67.0/24 list=CNIP
 add address=156.154.68.0/23 list=CNIP
+add address=156.154.70.0/24 list=CNIP
 add address=156.154.73.0/24 list=CNIP
 add address=156.154.125.0/24 list=CNIP
 add address=156.154.126.0/24 list=CNIP
@@ -2535,6 +2543,7 @@ add address=198.208.112.0/23 list=CNIP
 add address=199.7.67.0/24 list=CNIP
 add address=199.7.69.0/24 list=CNIP
 add address=199.65.192.0/21 list=CNIP
+add address=199.85.127.0/24 list=CNIP
 add address=199.244.144.0/24 list=CNIP
 add address=200.23.0.0/23 list=CNIP
 add address=201.131.252.0/23 list=CNIP
