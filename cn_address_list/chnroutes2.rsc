@@ -1823,6 +1823,7 @@ add address=118.126.16.0/23 list=CNIP
 add address=118.126.18.0/24 list=CNIP
 add address=118.126.32.0/19 list=CNIP
 add address=118.126.64.0/18 list=CNIP
+add address=118.126.128.0/17 list=CNIP
 add address=118.132.0.0/14 list=CNIP
 add address=118.144.0.0/16 list=CNIP
 add address=118.145.0.0/19 list=CNIP
