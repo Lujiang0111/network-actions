@@ -160,7 +160,7 @@ add address=42.248.0.0/15 list=CNIP
 add address=43.136.0.0/13 list=CNIP
 add address=43.144.0.0/15 list=CNIP
 add address=43.192.0.0/16 list=CNIP
-add address=43.193.0.0/17 list=CNIP
+add address=43.193.0.0/18 list=CNIP
 add address=43.196.0.0/16 list=CNIP
 add address=43.224.12.0/22 list=CNIP
 add address=43.224.24.0/22 list=CNIP
