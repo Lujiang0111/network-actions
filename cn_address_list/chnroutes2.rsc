@@ -909,7 +909,6 @@ add address=103.91.176.0/22 list=CNIP
 add address=103.91.208.0/22 list=CNIP
 add address=103.93.180.0/22 list=CNIP
 add address=103.94.12.0/22 list=CNIP
-add address=103.94.20.0/23 list=CNIP
 add address=103.95.68.0/22 list=CNIP
 add address=103.95.220.0/23 list=CNIP
 add address=103.95.222.0/24 list=CNIP
