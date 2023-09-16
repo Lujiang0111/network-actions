@@ -131,7 +131,6 @@ add address=42.100.0.0/14 list=CNIP
 add address=42.120.0.0/15 list=CNIP
 add address=42.122.0.0/16 list=CNIP
 add address=42.123.64.0/18 list=CNIP
-add address=42.129.0.0/16 list=CNIP
 add address=42.156.128.0/17 list=CNIP
 add address=42.157.128.0/21 list=CNIP
 add address=42.157.160.0/19 list=CNIP
