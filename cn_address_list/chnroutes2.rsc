@@ -2507,9 +2507,6 @@ add address=198.208.61.0/24 list=CNIP
 add address=198.208.63.0/24 list=CNIP
 add address=198.208.67.0/24 list=CNIP
 add address=198.208.112.0/23 list=CNIP
-add address=199.65.192.0/24 list=CNIP
-add address=199.65.194.0/23 list=CNIP
-add address=199.65.196.0/22 list=CNIP
 add address=199.244.144.0/24 list=CNIP
 add address=202.1.86.0/23 list=CNIP
 add address=202.1.90.0/23 list=CNIP
