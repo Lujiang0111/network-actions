@@ -391,6 +391,7 @@ add address=47.96.0.0/12 list=CNIP
 add address=47.112.0.0/13 list=CNIP
 add address=47.120.0.0/15 list=CNIP
 add address=47.122.0.0/17 list=CNIP
+add address=47.122.128.0/19 list=CNIP
 add address=47.123.0.0/16 list=CNIP
 add address=49.4.0.0/18 list=CNIP
 add address=49.4.64.0/19 list=CNIP
