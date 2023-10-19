@@ -420,6 +420,7 @@ add address=52.82.131.0/24 list=CNIP
 add address=52.82.132.0/24 list=CNIP
 add address=52.82.134.0/23 list=CNIP
 add address=52.82.136.0/24 list=CNIP
+add address=52.82.144.0/23 list=CNIP
 add address=52.82.148.0/22 list=CNIP
 add address=52.82.160.0/21 list=CNIP
 add address=52.82.168.0/24 list=CNIP
@@ -2034,7 +2035,10 @@ add address=123.58.160.0/19 list=CNIP
 add address=123.58.224.0/19 list=CNIP
 add address=123.59.0.0/16 list=CNIP
 add address=123.60.0.0/15 list=CNIP
-add address=123.64.0.0/12 list=CNIP
+add address=123.64.0.0/13 list=CNIP
+add address=123.72.0.0/14 list=CNIP
+add address=123.76.0.0/16 list=CNIP
+add address=123.78.0.0/15 list=CNIP
 add address=123.80.0.0/13 list=CNIP
 add address=123.90.0.0/15 list=CNIP
 add address=123.92.0.0/14 list=CNIP
