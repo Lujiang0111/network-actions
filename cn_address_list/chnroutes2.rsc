@@ -583,6 +583,7 @@ add address=101.36.128.0/17 list=CNIP
 add address=101.37.0.0/16 list=CNIP
 add address=101.38.0.0/15 list=CNIP
 add address=101.40.0.0/14 list=CNIP
+add address=101.49.206.0/23 list=CNIP
 add address=101.50.8.0/21 list=CNIP
 add address=101.50.56.0/22 list=CNIP
 add address=101.52.4.0/24 list=CNIP
@@ -912,6 +913,7 @@ add address=103.95.68.0/22 list=CNIP
 add address=103.95.220.0/23 list=CNIP
 add address=103.95.222.0/24 list=CNIP
 add address=103.95.252.0/22 list=CNIP
+add address=103.96.8.0/22 list=CNIP
 add address=103.96.214.0/23 list=CNIP
 add address=103.96.224.0/23 list=CNIP
 add address=103.97.60.0/24 list=CNIP
