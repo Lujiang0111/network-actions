@@ -16,7 +16,8 @@ add address=1.56.0.0/13 list=CNIP
 add address=1.68.0.0/14 list=CNIP
 add address=1.80.0.0/13 list=CNIP
 add address=1.88.0.0/14 list=CNIP
-add address=1.92.0.0/18 list=CNIP
+add address=1.92.0.0/17 list=CNIP
+add address=1.92.128.0/19 list=CNIP
 add address=1.92.192.0/18 list=CNIP
 add address=1.93.0.0/16 list=CNIP
 add address=1.94.0.0/17 list=CNIP
