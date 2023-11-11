@@ -2320,6 +2320,7 @@ add address=156.107.179.0/24 list=CNIP
 add address=156.107.181.0/24 list=CNIP
 add address=156.248.0.0/22 list=CNIP
 add address=156.248.4.0/24 list=CNIP
+add address=156.252.31.0/24 list=CNIP
 add address=157.0.0.0/16 list=CNIP
 add address=157.18.0.0/16 list=CNIP
 add address=157.61.0.0/16 list=CNIP
