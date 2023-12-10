@@ -687,6 +687,7 @@ add address=103.5.192.0/22 list=CNIP
 add address=103.6.220.0/22 list=CNIP
 add address=103.7.140.0/22 list=CNIP
 add address=103.7.212.0/22 list=CNIP
+add address=103.8.8.0/22 list=CNIP
 add address=103.8.33.0/24 list=CNIP
 add address=103.8.34.0/23 list=CNIP
 add address=103.8.52.0/22 list=CNIP
