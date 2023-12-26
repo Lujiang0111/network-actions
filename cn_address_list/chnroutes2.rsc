@@ -2272,6 +2272,7 @@ add address=139.186.0.0/16 list=CNIP
 add address=139.189.0.0/16 list=CNIP
 add address=139.196.0.0/16 list=CNIP
 add address=139.198.0.0/18 list=CNIP
+add address=139.198.255.0/24 list=CNIP
 add address=139.199.0.0/16 list=CNIP
 add address=139.200.0.0/13 list=CNIP
 add address=139.208.0.0/13 list=CNIP
@@ -2879,6 +2880,8 @@ add address=203.148.0.0/18 list=CNIP
 add address=203.148.64.0/20 list=CNIP
 add address=203.156.192.0/18 list=CNIP
 add address=203.160.129.0/24 list=CNIP
+add address=203.160.192.0/24 list=CNIP
+add address=203.160.196.0/24 list=CNIP
 add address=203.160.212.0/24 list=CNIP
 add address=203.161.192.0/19 list=CNIP
 add address=203.166.160.0/22 list=CNIP
@@ -2891,8 +2894,8 @@ add address=203.166.180.0/24 list=CNIP
 add address=203.166.186.0/23 list=CNIP
 add address=203.166.188.0/23 list=CNIP
 add address=203.166.191.0/24 list=CNIP
-add address=203.168.0.0/23 list=CNIP
-add address=203.168.2.0/24 list=CNIP
+add address=203.168.0.0/22 list=CNIP
+add address=203.168.8.0/24 list=CNIP
 add address=203.168.16.0/23 list=CNIP
 add address=203.168.18.0/24 list=CNIP
 add address=203.174.4.0/24 list=CNIP
@@ -3235,7 +3238,8 @@ add address=218.98.108.0/23 list=CNIP
 add address=218.98.111.0/24 list=CNIP
 add address=218.98.112.0/22 list=CNIP
 add address=218.98.160.0/24 list=CNIP
-add address=218.98.176.0/24 list=CNIP
+add address=218.98.176.0/21 list=CNIP
+add address=218.98.208.0/21 list=CNIP
 add address=218.104.0.0/15 list=CNIP
 add address=218.106.0.0/16 list=CNIP
 add address=218.107.0.0/18 list=CNIP
@@ -3302,7 +3306,10 @@ add address=219.234.0.0/21 list=CNIP
 add address=219.234.80.0/20 list=CNIP
 add address=219.234.96.0/19 list=CNIP
 add address=219.234.128.0/17 list=CNIP
-add address=219.235.0.0/17 list=CNIP
+add address=219.235.8.0/21 list=CNIP
+add address=219.235.16.0/20 list=CNIP
+add address=219.235.32.0/19 list=CNIP
+add address=219.235.64.0/18 list=CNIP
 add address=219.235.128.0/20 list=CNIP
 add address=219.235.144.0/21 list=CNIP
 add address=219.235.192.0/23 list=CNIP
