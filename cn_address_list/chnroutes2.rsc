@@ -50,6 +50,7 @@ add address=14.134.0.0/15 list=CNIP
 add address=14.144.0.0/12 list=CNIP
 add address=14.204.0.0/15 list=CNIP
 add address=14.208.0.0/12 list=CNIP
+add address=23.166.168.0/24 list=CNIP
 add address=27.0.128.0/24 list=CNIP
 add address=27.0.130.0/23 list=CNIP
 add address=27.0.132.0/22 list=CNIP
