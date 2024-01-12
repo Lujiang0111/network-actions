@@ -1,0 +1,35 @@
+name: Update List
+on:
+  schedule:
+    - cron: '0 17 * * *'
+  workflow_dispatch:
+jobs:
+  update-rsc:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Run action.sh
+        run: |
+          cd list/clash
+          sh action.sh
+          cd -
+          cd list/cn_address
+          sh action.sh
+          cd -
+          cd list/iptv
+          sh action.sh
+          cd -
+
+      - name: Check if there are any changes
+        id: verify-diff
+        run: |
+          git diff --quiet . || echo "changed=true" >> $GITHUB_OUTPUT
+
+      - name: Commit to own repository
+        if: steps.verify-diff.outputs.changed == 'true'
+        run: |
+          git config --global user.name 'Lujiang'
+          git config --global user.email 'Lujiang0111@gmail.com'
+          git commit -am "Automated update list"
+          git push
