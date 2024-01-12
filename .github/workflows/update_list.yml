@@ -12,13 +12,13 @@ jobs:
       - name: Run action.sh
         run: |
           cd list/clash
-          sh action.sh
+          bash action.sh
           cd -
           cd list/cn_address
-          sh action.sh
+          bash action.sh
           cd -
           cd list/iptv
-          sh action.sh
+          bash action.sh
           cd -
 
       - name: Check if there are any changes
