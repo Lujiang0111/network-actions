@@ -2240,6 +2240,7 @@ add address=125.254.176.0/21 list=CNIP
 add address=125.254.184.0/22 list=CNIP
 add address=125.254.188.0/23 list=CNIP
 add address=125.254.190.0/24 list=CNIP
+add address=128.107.24.0/23 list=CNIP
 add address=128.108.0.0/16 list=CNIP
 add address=129.28.0.0/16 list=CNIP
 add address=129.204.0.0/16 list=CNIP
