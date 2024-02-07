@@ -102,7 +102,6 @@ add address=39.108.0.0/16 list=CNIP
 add address=39.128.0.0/10 list=CNIP
 add address=40.0.176.0/20 list=CNIP
 add address=40.0.248.0/21 list=CNIP
-add address=40.72.64.0/24 list=CNIP
 add address=40.198.10.0/24 list=CNIP
 add address=40.198.16.0/21 list=CNIP
 add address=40.198.24.0/23 list=CNIP
