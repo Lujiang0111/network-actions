@@ -975,7 +975,6 @@ add address=103.126.1.0/24 list=CNIP
 add address=103.126.124.0/22 list=CNIP
 add address=103.131.152.0/22 list=CNIP
 add address=103.131.168.0/22 list=CNIP
-add address=103.132.80.0/23 list=CNIP
 add address=103.132.212.0/23 list=CNIP
 add address=103.135.160.0/22 list=CNIP
 add address=103.135.192.0/23 list=CNIP
