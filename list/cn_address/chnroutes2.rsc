@@ -497,7 +497,6 @@ add address=59.82.96.0/22 list=CNIP
 add address=59.82.104.0/21 list=CNIP
 add address=59.82.112.0/20 list=CNIP
 add address=59.82.128.0/21 list=CNIP
-add address=59.82.136.0/23 list=CNIP
 add address=59.83.192.0/19 list=CNIP
 add address=59.83.224.0/21 list=CNIP
 add address=59.83.232.0/22 list=CNIP
