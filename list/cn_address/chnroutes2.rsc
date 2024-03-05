@@ -1887,6 +1887,7 @@ add address=120.72.188.0/23 list=CNIP
 add address=120.72.190.0/24 list=CNIP
 add address=120.76.0.0/14 list=CNIP
 add address=120.80.0.0/13 list=CNIP
+add address=120.90.0.0/15 list=CNIP
 add address=120.92.0.0/17 list=CNIP
 add address=120.92.128.0/18 list=CNIP
 add address=120.92.192.0/19 list=CNIP
