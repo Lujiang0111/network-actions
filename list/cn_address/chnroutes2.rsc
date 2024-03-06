@@ -1808,6 +1808,7 @@ add address=119.41.0.0/16 list=CNIP
 add address=119.42.0.0/19 list=CNIP
 add address=119.42.136.0/21 list=CNIP
 add address=119.42.224.0/19 list=CNIP
+add address=119.44.253.0/24 list=CNIP
 add address=119.45.0.0/16 list=CNIP
 add address=119.48.0.0/13 list=CNIP
 add address=119.57.0.0/16 list=CNIP
