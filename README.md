@@ -20,4 +20,4 @@
 
 ### clash
 
-+ 提供去除了```IP-CIDR```的地址列表。
++ 提供转换后的clash list
