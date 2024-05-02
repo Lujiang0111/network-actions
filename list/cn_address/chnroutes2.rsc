@@ -1714,7 +1714,6 @@ add address=117.128.0.0/10 list=CNIP
 add address=118.24.0.0/15 list=CNIP
 add address=118.26.64.0/21 list=CNIP
 add address=118.26.72.0/22 list=CNIP
-add address=118.26.96.0/21 list=CNIP
 add address=118.26.116.0/22 list=CNIP
 add address=118.26.128.0/22 list=CNIP
 add address=118.26.136.0/22 list=CNIP
