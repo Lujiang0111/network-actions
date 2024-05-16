@@ -37,5 +37,5 @@ done
 
 for url in "${del_ip_cidr_urls[@]}"; do
     filename=$(basename "${url}")
-    curl -s "${url}" | sed -e '/^IP-CIDR/d' >"${filename}"
+    curl -s "${url}" | sed -e '/^IP-CIDR/d' | sed -e '/^IP-ASN/d' >"${filename}"
 done
