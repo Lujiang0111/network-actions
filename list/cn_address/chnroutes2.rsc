@@ -2209,6 +2209,7 @@ add address=125.104.0.0/13 list=CNIP
 add address=125.112.0.0/12 list=CNIP
 add address=125.171.0.0/16 list=CNIP
 add address=125.208.0.0/19 list=CNIP
+add address=125.208.32.0/24 list=CNIP
 add address=125.208.37.0/24 list=CNIP
 add address=125.208.40.0/24 list=CNIP
 add address=125.208.46.0/24 list=CNIP
