@@ -2655,7 +2655,7 @@ add address=202.173.8.0/22 list=CNIP
 add address=202.173.14.0/23 list=CNIP
 add address=202.173.224.0/19 list=CNIP
 add address=202.181.28.0/24 list=CNIP
-add address=202.181.124.0/22 list=CNIP
+add address=202.181.120.0/21 list=CNIP
 add address=202.189.0.0/20 list=CNIP
 add address=202.192.0.0/12 list=CNIP
 add address=203.0.104.0/21 list=CNIP
