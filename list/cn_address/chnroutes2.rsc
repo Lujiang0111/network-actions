@@ -580,7 +580,6 @@ add address=64.188.40.0/22 list=CNIP
 add address=64.188.44.0/23 list=CNIP
 add address=66.102.240.0/21 list=CNIP
 add address=66.102.248.0/22 list=CNIP
-add address=66.102.255.0/24 list=CNIP
 add address=68.79.0.0/18 list=CNIP
 add address=69.165.71.0/24 list=CNIP
 add address=69.230.192.0/18 list=CNIP
