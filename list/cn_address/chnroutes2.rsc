@@ -699,6 +699,7 @@ add address=101.254.32.0/19 list=CNIP
 add address=101.254.64.0/18 list=CNIP
 add address=101.254.128.0/17 list=CNIP
 add address=103.1.8.0/22 list=CNIP
+add address=103.1.20.0/22 list=CNIP
 add address=103.1.168.0/22 list=CNIP
 add address=103.2.108.0/22 list=CNIP
 add address=103.2.208.0/22 list=CNIP
@@ -2059,6 +2060,7 @@ add address=122.119.190.0/24 list=CNIP
 add address=122.119.224.0/22 list=CNIP
 add address=122.119.232.0/23 list=CNIP
 add address=122.119.236.0/24 list=CNIP
+add address=122.119.253.0/24 list=CNIP
 add address=122.136.0.0/13 list=CNIP
 add address=122.144.128.0/17 list=CNIP
 add address=122.152.192.0/18 list=CNIP
@@ -2267,6 +2269,7 @@ add address=139.198.255.0/24 list=CNIP
 add address=139.199.0.0/16 list=CNIP
 add address=139.200.0.0/13 list=CNIP
 add address=139.208.0.0/13 list=CNIP
+add address=139.219.138.0/24 list=CNIP
 add address=139.220.192.0/22 list=CNIP
 add address=139.220.240.0/22 list=CNIP
 add address=139.224.0.0/16 list=CNIP
@@ -2517,6 +2520,7 @@ add address=182.157.0.0/16 list=CNIP
 add address=182.174.0.0/15 list=CNIP
 add address=182.200.0.0/13 list=CNIP
 add address=182.236.160.0/19 list=CNIP
+add address=182.238.0.0/16 list=CNIP
 add address=182.240.0.0/13 list=CNIP
 add address=182.254.0.0/16 list=CNIP
 add address=183.0.0.0/10 list=CNIP
@@ -2654,6 +2658,7 @@ add address=202.149.224.0/19 list=CNIP
 add address=202.152.190.0/23 list=CNIP
 add address=202.153.48.0/20 list=CNIP
 add address=202.158.160.0/19 list=CNIP
+add address=202.164.0.0/20 list=CNIP
 add address=202.165.208.0/20 list=CNIP
 add address=202.168.160.0/19 list=CNIP
 add address=202.170.128.0/19 list=CNIP
@@ -3122,9 +3127,7 @@ add address=211.147.64.0/19 list=CNIP
 add address=211.147.128.0/18 list=CNIP
 add address=211.147.208.0/20 list=CNIP
 add address=211.147.224.0/19 list=CNIP
-add address=211.148.0.0/17 list=CNIP
-add address=211.148.128.0/19 list=CNIP
-add address=211.148.192.0/18 list=CNIP
+add address=211.148.0.0/16 list=CNIP
 add address=211.149.128.0/17 list=CNIP
 add address=211.150.0.0/18 list=CNIP
 add address=211.150.64.0/19 list=CNIP
@@ -3209,12 +3212,10 @@ add address=211.161.203.0/24 list=CNIP
 add address=211.161.209.0/24 list=CNIP
 add address=211.161.221.0/24 list=CNIP
 add address=211.162.0.0/21 list=CNIP
-add address=211.162.32.0/21 list=CNIP
 add address=211.162.64.0/20 list=CNIP
 add address=211.162.112.0/20 list=CNIP
 add address=211.162.192.0/22 list=CNIP
 add address=211.162.200.0/22 list=CNIP
-add address=211.162.236.0/22 list=CNIP
 add address=211.162.240.0/20 list=CNIP
 add address=211.165.0.0/16 list=CNIP
 add address=211.166.0.0/16 list=CNIP
@@ -3428,10 +3429,7 @@ add address=221.13.0.0/16 list=CNIP
 add address=221.14.0.0/15 list=CNIP
 add address=221.122.0.0/16 list=CNIP
 add address=221.123.128.0/17 list=CNIP
-add address=221.129.19.0/24 list=CNIP
-add address=221.129.20.0/24 list=CNIP
-add address=221.129.22.0/23 list=CNIP
-add address=221.129.129.0/24 list=CNIP
+add address=221.129.0.0/16 list=CNIP
 add address=221.130.0.0/15 list=CNIP
 add address=221.133.225.0/24 list=CNIP
 add address=221.133.226.0/24 list=CNIP
