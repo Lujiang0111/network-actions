@@ -2361,7 +2361,6 @@ add address=160.19.76.0/23 list=CNIP
 add address=160.19.208.0/21 list=CNIP
 add address=160.20.18.0/23 list=CNIP
 add address=160.83.110.0/24 list=CNIP
-add address=160.202.60.0/22 list=CNIP
 add address=160.202.212.0/22 list=CNIP
 add address=161.163.0.0/21 list=CNIP
 add address=161.163.28.0/23 list=CNIP
