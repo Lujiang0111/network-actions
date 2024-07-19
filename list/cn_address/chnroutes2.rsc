@@ -2204,8 +2204,7 @@ add address=124.196.24.0/22 list=CNIP
 add address=124.196.28.0/24 list=CNIP
 add address=124.196.30.0/23 list=CNIP
 add address=124.196.32.0/23 list=CNIP
-add address=124.196.40.0/23 list=CNIP
-add address=124.196.43.0/24 list=CNIP
+add address=124.196.40.0/22 list=CNIP
 add address=124.196.48.0/22 list=CNIP
 add address=124.196.52.0/23 list=CNIP
 add address=124.196.55.0/24 list=CNIP
