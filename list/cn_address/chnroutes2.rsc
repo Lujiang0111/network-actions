@@ -558,6 +558,7 @@ add address=60.232.164.0/24 list=CNIP
 add address=60.232.176.0/23 list=CNIP
 add address=60.232.178.0/24 list=CNIP
 add address=60.232.224.0/24 list=CNIP
+add address=60.232.244.0/24 list=CNIP
 add address=60.232.246.0/23 list=CNIP
 add address=60.232.252.0/24 list=CNIP
 add address=60.232.254.0/24 list=CNIP
