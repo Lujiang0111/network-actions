@@ -554,10 +554,14 @@ add address=60.204.0.0/14 list=CNIP
 add address=60.208.0.0/12 list=CNIP
 add address=60.232.0.0/24 list=CNIP
 add address=60.232.130.0/24 list=CNIP
+add address=60.232.136.0/24 list=CNIP
 add address=60.232.144.0/24 list=CNIP
+add address=60.232.148.0/24 list=CNIP
 add address=60.232.164.0/24 list=CNIP
+add address=60.232.172.0/24 list=CNIP
 add address=60.232.176.0/23 list=CNIP
 add address=60.232.178.0/24 list=CNIP
+add address=60.232.192.0/24 list=CNIP
 add address=60.232.224.0/24 list=CNIP
 add address=60.232.244.0/24 list=CNIP
 add address=60.232.246.0/23 list=CNIP
