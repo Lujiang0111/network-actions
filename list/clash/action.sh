@@ -4,6 +4,11 @@ ori_urls=(
     "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Lan/Lan.list"
 )
 
+for url in "${ori_urls[@]}"; do
+    file_name=$(basename "${url}")
+    curl -s "${url}" >"${file_name}"
+done
+
 del_ip_cidr_urls=(
     "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/AmazonCN/AmazonCN.list"
     "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Cloudflarecn/Cloudflarecn.list"
@@ -33,12 +38,15 @@ del_ip_cidr_urls=(
     "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Docker/Docker.list"
 )
 
-for url in "${ori_urls[@]}"; do
-    filename=$(basename "${url}")
-    curl -s "${url}" >"${filename}"
+for url in "${del_ip_cidr_urls[@]}"; do
+    file_name=$(basename "${url}")
+    curl -s "${url}" | sed -e '/^IP-CIDR/d' | sed -e '/^IP-ASN/d' >"${file_name}"
 done
 
-for url in "${del_ip_cidr_urls[@]}"; do
-    filename=$(basename "${url}")
-    curl -s "${url}" | sed -e '/^IP-CIDR/d' | sed -e '/^IP-ASN/d' >"${filename}"
+del_microsoft_files=(
+    "GameDownloadCN.list"
+)
+
+for file_name in "${del_microsoft_files[@]}"; do
+    sed -i '/microsoft.com/d' "${file_name}"
 done
