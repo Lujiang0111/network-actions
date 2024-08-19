@@ -40,13 +40,21 @@ del_ip_cidr_urls=(
 
 for url in "${del_ip_cidr_urls[@]}"; do
     file_name=$(basename "${url}")
-    curl -s "${url}" | sed -e '/^IP-CIDR/d' | sed -e '/^IP-ASN/d' >"${file_name}"
+    curl -s "${url}" | sed -e '/^IP-CIDR/d' -e '/^IP-ASN/d' >"${file_name}"
 done
 
-del_microsoft_files=(
-    "GameDownloadCN.list"
+# GameDownloadCN.list Setting
+sed -i '/microsoft.com/d' GameDownloadCN.list
+echo 'DOMAIN-SUFFIX,patch-dl.ffxiv.com' >>GameDownloadCN.list
+
+game_urls=(
+    "https://raw.githubusercontent.com/FQrabbit/SSTap-Rule/master/rules/DiabloIV-HK.rules"
+    "https://raw.githubusercontent.com/FQrabbit/SSTap-Rule/master/rules/FINAL-FANTASY-XIV-cn.rules"
+    "https://raw.githubusercontent.com/FQrabbit/SSTap-Rule/master/rules/Final-Fantasy-XIV.rules"
+    "https://raw.githubusercontent.com/FQrabbit/SSTap-Rule/master/rules/PathOfexile.rules"
 )
 
-for file_name in "${del_microsoft_files[@]}"; do
-    sed -i '/microsoft.com/d' "${file_name}"
+for url in "${game_urls[@]}"; do
+    file_name=$(basename "${url}")
+    curl -s "${url}" | sed -e '/^#/d' -e 's/^/IP-CIDR,/' -e 's/$/,no-resolve/' >"game/${file_name}"
 done
