@@ -60,8 +60,8 @@ game_urls=(
 for url in "${game_urls[@]}"; do
     file_name=$(basename "${url}")
     curl -s "${url}" |
-        sed -e '/^[[:space:]]*#/d' \
-            -e 's/^[[:space:]]*/IP-CIDR,/' \
+        sed -e '/^[[:space:]]*#/d' |
+        sed -e 's/^[[:space:]]*/IP-CIDR,/' \
             -e 's/[[:space:]]*$/,no-resolve/' \
             >"game/${file_name}"
 done
