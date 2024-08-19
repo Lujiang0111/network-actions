@@ -40,7 +40,10 @@ del_ip_cidr_urls=(
 
 for url in "${del_ip_cidr_urls[@]}"; do
     file_name=$(basename "${url}")
-    curl -s "${url}" | sed -e '/^IP-CIDR/d' -e '/^IP-ASN/d' >"${file_name}"
+    curl -s "${url}" |
+        sed -e '/^IP-CIDR/d' \
+            -e '/^IP-ASN/d' \
+            >"${file_name}"
 done
 
 # GameDownloadCN.list Setting
@@ -56,5 +59,9 @@ game_urls=(
 
 for url in "${game_urls[@]}"; do
     file_name=$(basename "${url}")
-    curl -s "${url}" | sed -e '/^#/d' -e 's/^/IP-CIDR,/' -e 's/$/,no-resolve/' >"game/${file_name}"
+    curl -s "${url}" |
+        sed -e '/^[[:space:]]*#/d' \
+            -e 's/^[[:space:]]*/IP-CIDR,/' \
+            -e 's/[[:space:]]*$/,no-resolve/' \
+            >"game/${file_name}"
 done
