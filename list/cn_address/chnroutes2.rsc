@@ -1,9 +1,3 @@
-/ip firewall address-list
-remove [/ip firewall address-list find list=CNIP]
-add address=10.0.0.0/8 list=CNIP comment=private-network
-add address=172.16.0.0/12 list=CNIP comment=private-network
-add address=192.168.0.0/16 list=CNIP comment=private-network
-add address=224.0.0.0/4 list=CNIP comment=private-network
 add address=1.1.8.0/24 list=CNIP
 add address=1.8.1.0/24 list=CNIP
 add address=1.8.8.0/24 list=CNIP
