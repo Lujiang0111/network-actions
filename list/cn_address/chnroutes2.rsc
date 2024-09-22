@@ -683,7 +683,6 @@ add address=101.37.0.0/16 list=CNIP
 add address=101.39.0.0/16 list=CNIP
 add address=101.40.0.0/16 list=CNIP
 add address=101.42.0.0/15 list=CNIP
-add address=101.49.152.0/21 list=CNIP
 add address=101.49.206.0/23 list=CNIP
 add address=101.50.8.0/21 list=CNIP
 add address=101.50.56.0/22 list=CNIP
@@ -1030,6 +1029,7 @@ add address=103.96.215.0/24 list=CNIP
 add address=103.96.224.0/23 list=CNIP
 add address=103.97.60.0/24 list=CNIP
 add address=103.97.112.0/24 list=CNIP
+add address=103.98.0.0/24 list=CNIP
 add address=103.98.44.0/22 list=CNIP
 add address=103.98.125.0/24 list=CNIP
 add address=103.98.127.0/24 list=CNIP
