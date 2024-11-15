@@ -129,8 +129,10 @@ add address=36.213.35.0/24 list=CNIP
 add address=36.213.36.0/22 list=CNIP
 add address=36.213.40.0/21 list=CNIP
 add address=36.213.48.0/20 list=CNIP
-add address=36.213.64.0/20 list=CNIP
-add address=36.213.80.0/21 list=CNIP
+add address=36.213.64.0/18 list=CNIP
+add address=36.213.128.0/18 list=CNIP
+add address=36.213.192.0/23 list=CNIP
+add address=36.213.194.0/24 list=CNIP
 add address=36.248.0.0/14 list=CNIP
 add address=36.255.116.0/22 list=CNIP
 add address=36.255.128.0/22 list=CNIP
@@ -461,7 +463,6 @@ add address=45.150.236.0/23 list=CNIP
 add address=45.153.128.0/22 list=CNIP
 add address=45.157.70.0/23 list=CNIP
 add address=45.199.167.0/24 list=CNIP
-add address=45.204.112.0/20 list=CNIP
 add address=45.248.8.0/22 list=CNIP
 add address=45.248.110.0/24 list=CNIP
 add address=45.249.212.0/22 list=CNIP
@@ -1255,9 +1256,8 @@ add address=103.142.154.0/23 list=CNIP
 add address=103.142.234.0/23 list=CNIP
 add address=103.143.16.0/22 list=CNIP
 add address=103.143.92.0/23 list=CNIP
-add address=103.143.230.0/23 list=CNIP
-add address=103.143.238.0/23 list=CNIP
-add address=103.144.2.0/23 list=CNIP
+add address=103.143.231.0/24 list=CNIP
+add address=103.143.238.0/24 list=CNIP
 add address=103.144.28.0/24 list=CNIP
 add address=103.144.66.0/23 list=CNIP
 add address=103.144.70.0/24 list=CNIP
@@ -1949,6 +1949,7 @@ add address=115.148.0.0/14 list=CNIP
 add address=115.152.0.0/13 list=CNIP
 add address=115.168.0.0/14 list=CNIP
 add address=115.172.32.0/21 list=CNIP
+add address=115.172.46.0/23 list=CNIP
 add address=115.173.0.0/19 list=CNIP
 add address=115.174.64.0/19 list=CNIP
 add address=115.182.0.0/15 list=CNIP
@@ -2876,7 +2877,6 @@ add address=154.205.88.0/21 list=CNIP
 add address=154.205.96.0/20 list=CNIP
 add address=154.205.112.0/21 list=CNIP
 add address=154.205.124.0/22 list=CNIP
-add address=154.223.96.0/19 list=CNIP
 add address=155.126.176.0/23 list=CNIP
 add address=156.0.92.0/22 list=CNIP
 add address=156.107.160.0/24 list=CNIP
@@ -3459,7 +3459,7 @@ add address=203.94.0.0/19 list=CNIP
 add address=203.95.0.0/21 list=CNIP
 add address=203.95.96.0/22 list=CNIP
 add address=203.95.104.0/21 list=CNIP
-add address=203.95.128.0/24 list=CNIP
+add address=203.95.128.0/23 list=CNIP
 add address=203.99.22.0/23 list=CNIP
 add address=203.99.24.0/22 list=CNIP
 add address=203.99.30.0/23 list=CNIP
