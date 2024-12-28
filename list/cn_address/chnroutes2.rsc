@@ -475,6 +475,7 @@ add address=45.147.48.0/23 list=CNIP
 add address=45.150.236.0/23 list=CNIP
 add address=45.153.128.0/22 list=CNIP
 add address=45.157.70.0/23 list=CNIP
+add address=45.192.64.0/19 list=CNIP
 add address=45.199.167.0/24 list=CNIP
 add address=45.204.112.0/20 list=CNIP
 add address=45.248.8.0/22 list=CNIP
@@ -1245,7 +1246,6 @@ add address=103.123.4.0/23 list=CNIP
 add address=103.126.1.0/24 list=CNIP
 add address=103.126.124.0/22 list=CNIP
 add address=103.126.208.0/22 list=CNIP
-add address=103.127.219.0/24 list=CNIP
 add address=103.131.138.0/23 list=CNIP
 add address=103.131.152.0/22 list=CNIP
 add address=103.131.168.0/22 list=CNIP
@@ -2913,7 +2913,6 @@ add address=154.205.88.0/21 list=CNIP
 add address=154.205.96.0/20 list=CNIP
 add address=154.205.112.0/21 list=CNIP
 add address=154.205.124.0/22 list=CNIP
-add address=154.223.96.0/19 list=CNIP
 add address=155.126.176.0/23 list=CNIP
 add address=156.0.92.0/22 list=CNIP
 add address=156.107.160.0/24 list=CNIP
@@ -2929,7 +2928,7 @@ add address=156.227.48.0/20 list=CNIP
 add address=156.232.9.0/24 list=CNIP
 add address=156.232.10.0/23 list=CNIP
 add address=156.239.0.0/20 list=CNIP
-add address=156.239.96.0/19 list=CNIP
+add address=156.239.64.0/18 list=CNIP
 add address=156.239.224.0/19 list=CNIP
 add address=156.247.8.0/22 list=CNIP
 add address=156.247.12.0/23 list=CNIP
@@ -3155,7 +3154,6 @@ add address=184.27.204.0/24 list=CNIP
 add address=185.49.33.0/24 list=CNIP
 add address=185.80.200.0/22 list=CNIP
 add address=185.183.84.0/24 list=CNIP
-add address=185.184.220.0/24 list=CNIP
 add address=185.194.148.0/24 list=CNIP
 add address=185.201.226.0/23 list=CNIP
 add address=185.207.154.0/23 list=CNIP
@@ -3497,7 +3495,7 @@ add address=203.93.64.0/19 list=CNIP
 add address=203.93.96.0/20 list=CNIP
 add address=203.93.117.0/24 list=CNIP
 add address=203.93.120.0/21 list=CNIP
-add address=203.93.144.0/20 list=CNIP
+add address=203.93.128.0/19 list=CNIP
 add address=203.93.160.0/20 list=CNIP
 add address=203.93.208.0/20 list=CNIP
 add address=203.93.224.0/19 list=CNIP
