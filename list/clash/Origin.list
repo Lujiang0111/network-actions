@@ -1,14 +1,17 @@
-# NAME: Origin
-# AUTHOR: blackmatrix7
-# REPO: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2024-07-03 16:16:58
-# DOMAIN: 5
-# DOMAIN-SUFFIX: 2
-# TOTAL: 7
-DOMAIN,cloudsync-prod.s3.amazonaws.com
-DOMAIN,eaasserts-a.akamaihd.net
-DOMAIN,origin-a.akamaihd.net
-DOMAIN,originasserts.akamaized.net
-DOMAIN,rtm.tnt-ea.com
-DOMAIN-SUFFIX,ea.com
-DOMAIN-SUFFIX,origin.com
+
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>503 backend read error</title>
+  </head>
+  <body>
+    <h1>Error 503 backend read error</h1>
+    <p>backend read error</p>
+    <h3>Error 54113</h3>
+    <p>Details: cache-sjc10050-SJC 1739639579 2951651289</p>
+    <hr>
+    <p>Varnish cache server</p>
+  </body>
+</html>
