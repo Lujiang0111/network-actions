@@ -2882,7 +2882,7 @@ add address=156.224.200.0/24 list=CNIP
 add address=156.224.224.0/24 list=CNIP
 add address=156.224.232.0/24 list=CNIP
 add address=156.232.9.0/24 list=CNIP
-add address=156.232.10.0/24 list=CNIP
+add address=156.232.10.0/23 list=CNIP
 add address=156.247.8.0/22 list=CNIP
 add address=156.247.12.0/24 list=CNIP
 add address=156.247.14.0/24 list=CNIP
@@ -3840,7 +3840,6 @@ add address=212.64.0.0/17 list=CNIP
 add address=212.103.62.0/24 list=CNIP
 add address=212.129.128.0/17 list=CNIP
 add address=217.194.133.0/24 list=CNIP
-add address=217.194.135.0/24 list=CNIP
 add address=218.0.0.0/11 list=CNIP
 add address=218.56.0.0/13 list=CNIP
 add address=218.64.0.0/11 list=CNIP
