@@ -1271,6 +1271,7 @@ add address=103.144.70.0/24 list=CNIP
 add address=103.144.158.0/23 list=CNIP
 add address=103.144.245.0/24 list=CNIP
 add address=103.145.42.0/23 list=CNIP
+add address=103.145.60.0/23 list=CNIP
 add address=103.145.106.0/23 list=CNIP
 add address=103.145.190.0/23 list=CNIP
 add address=103.146.8.0/23 list=CNIP
