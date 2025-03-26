@@ -304,8 +304,7 @@ add address=43.240.0.0/22 list=CNIP
 add address=43.240.12.0/22 list=CNIP
 add address=43.240.56.0/21 list=CNIP
 add address=43.240.72.0/22 list=CNIP
-add address=43.240.124.0/24 list=CNIP
-add address=43.240.126.0/23 list=CNIP
+add address=43.240.124.0/22 list=CNIP
 add address=43.240.128.0/22 list=CNIP
 add address=43.240.133.0/24 list=CNIP
 add address=43.240.156.0/22 list=CNIP
@@ -987,6 +986,7 @@ add address=103.37.72.0/22 list=CNIP
 add address=103.37.136.0/21 list=CNIP
 add address=103.37.144.0/20 list=CNIP
 add address=103.37.160.0/21 list=CNIP
+add address=103.37.172.0/22 list=CNIP
 add address=103.38.40.0/22 list=CNIP
 add address=103.38.84.0/22 list=CNIP
 add address=103.38.92.0/23 list=CNIP
@@ -1150,6 +1150,7 @@ add address=103.91.176.0/22 list=CNIP
 add address=103.91.208.0/22 list=CNIP
 add address=103.92.88.0/22 list=CNIP
 add address=103.93.180.0/22 list=CNIP
+add address=103.93.204.0/22 list=CNIP
 add address=103.94.12.0/22 list=CNIP
 add address=103.94.20.0/23 list=CNIP
 add address=103.95.68.0/22 list=CNIP
@@ -3516,6 +3517,7 @@ add address=203.161.192.0/19 list=CNIP
 add address=203.166.160.0/22 list=CNIP
 add address=203.166.165.0/24 list=CNIP
 add address=203.166.166.0/24 list=CNIP
+add address=203.166.168.0/24 list=CNIP
 add address=203.166.172.0/24 list=CNIP
 add address=203.166.177.0/24 list=CNIP
 add address=203.166.186.0/23 list=CNIP
@@ -3525,6 +3527,7 @@ add address=203.168.0.0/22 list=CNIP
 add address=203.168.8.0/24 list=CNIP
 add address=203.168.16.0/23 list=CNIP
 add address=203.168.18.0/24 list=CNIP
+add address=203.170.58.0/24 list=CNIP
 add address=203.174.4.0/24 list=CNIP
 add address=203.174.96.0/19 list=CNIP
 add address=203.175.128.0/19 list=CNIP
@@ -3831,7 +3834,6 @@ add address=211.162.0.0/21 list=CNIP
 add address=211.162.32.0/21 list=CNIP
 add address=211.162.64.0/20 list=CNIP
 add address=211.162.112.0/20 list=CNIP
-add address=211.162.192.0/22 list=CNIP
 add address=211.162.200.0/22 list=CNIP
 add address=211.165.0.0/16 list=CNIP
 add address=211.166.0.0/16 list=CNIP
