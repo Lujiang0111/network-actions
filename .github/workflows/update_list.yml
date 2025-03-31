@@ -11,7 +11,7 @@ jobs:
 
       - name: Run action.sh
         run: |
-          cd list/clash
+          cd list/clash/ios_rule_script
           bash action.sh
           cd -
           cd list/cn_address
