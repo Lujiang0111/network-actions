@@ -1,0 +1,32 @@
+name: Test
+on:
+  workflow_dispatch:
+jobs:
+  update-list:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Run action.py
+        run: |
+          cd list/clash/domain-list-community
+          python3 action.py
+          cd -
+
+      - name: Check if there are any changes
+        id: verify-diff
+        run: |
+          git diff --quiet . || echo "changed=true" >> $GITHUB_OUTPUT
+
+      - name: Commit to own repository
+        if: steps.verify-diff.outputs.changed == 'true'
+        run: |
+          git config --global user.name 'Lujiang'
+          git config --global user.email 'Lujiang0111@gmail.com'
+          git commit -am "Automated update list"
+          git push
