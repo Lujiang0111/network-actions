@@ -1,38 +1,34 @@
 import re
 import requests
 
-url_base = "https://raw.githubusercontent.com/v2fly/domain-list-community/refs/heads/master/data/"
+category_url_base = "https://raw.githubusercontent.com/v2fly/domain-list-community/refs/heads/master/data/"
 
 category_list = [
-    "115",
-    "alibaba",
-    "amazon",
-    "category-ai-!cn",
     "category-ai-cn",
-    "category-bank-cn",
+    "category-ai-!cn",
     "category-communication",
+    "category-container",
     "category-entertainment",
     "category-entertainment-cn",
     "category-games",
     "category-netdisk-cn",
     "category-ntp",
-    "category-porn",
     "category-pt",
-    "category-social-media-!cndocker",
+    "category-social-media-!cn",
     "google",
-    "jd",
     "microsoft",
     "mikrotik",
-    "pikpak",
-    "tencent",
-    "yandex",
 ]
 
-parsed_category_list = []
+custom_url_base = "https://raw.githubusercontent.com/Lujiang0111/Scripts/refs/heads/main/Openwrt/Clash/domain-list-community/"
+
+custom_list = [
+    "custom_cloud",
+    "custom_porn",
+]
 
 
-def ConvertFromContent(category, content):
-    file_map = {}
+def ConvertFromContent(category, content, file_map):
     for line in content.splitlines():
         line = re.sub(r"#.*", "", line).strip()
         if line.startswith("#"):
@@ -66,35 +62,43 @@ def ConvertFromContent(category, content):
 
         if prefix:
             if prefix == "include":
-                ConvertFormCategory(domain)
+                if domain.startswith("category-"):
+                    continue
+                sub_content = RequstUrl(category, f"{category_url_base}{domain}")
+                ConvertFromContent(category, sub_content, file_map)
             elif prefix == "full":
                 file_map[suffix].write(f"DOMAIN,{domain}\n")
+            elif prefix == "regexp":
+                file_map[suffix].write(f"DOMAIN-REGEX,{domain}\n")
             else:
                 continue
         else:
             file_map[suffix].write(f"DOMAIN-SUFFIX,{domain}\n")
 
-    for f in file_map.values():
-        f.close()
 
-
-def ConvertFormCategory(category):
-    if category in parsed_category_list:
-        return
-    parsed_category_list.append(category)
-
+def RequstUrl(category, url) -> str:
     while True:
-        print(f"convert category {category} ...")
+        print(f"request category={category}, url={url}...")
         try:
-            response = requests.get(f"{url_base}{category}")
+            response = requests.get(f"{url}")
         except Exception as e:
             print(f"request error: {e}, retry")
             continue
-
-        ConvertFromContent(category, response.text)
         break
+    return response.text
 
 
 if __name__ == "__main__":
     for category in category_list:
-        ConvertFormCategory(category)
+        content = RequstUrl(category, f"{category_url_base}{category}")
+        file_map = {}
+        ConvertFromContent(category, content, file_map)
+        for f in file_map.values():
+            f.close()
+
+    for category in custom_list:
+        content = RequstUrl(category, f"{custom_url_base}{category}")
+        file_map = {}
+        ConvertFromContent(category, content, file_map)
+        for f in file_map.values():
+            f.close()
