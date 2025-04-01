@@ -1,16 +1,41 @@
-import os
+import re
 import requests
-import urllib.parse
 
-url_list = [
-    "https://raw.githubusercontent.com/v2fly/domain-list-community/refs/heads/master/data/apple"
+url_base = "https://raw.githubusercontent.com/v2fly/domain-list-community/refs/heads/master/data/"
+
+category_list = [
+    "115",
+    "alibaba",
+    "amazon",
+    "category-ai-!cn",
+    "category-ai-cn",
+    "category-bank-cn",
+    "category-communication",
+    "category-entertainment",
+    "category-entertainment-cn",
+    "category-games",
+    "category-netdisk-cn",
+    "category-ntp",
+    "category-porn",
+    "category-pt",
+    "category-social-media-!cndocker",
+    "google",
+    "jd",
+    "microsoft",
+    "mikrotik",
+    "pikpak",
+    "tencent",
+    "yandex",
 ]
 
+parsed_category_list = []
 
-def Convert(base_name, content):
+
+def ConvertFromContent(category, content):
     file_map = {}
     for line in content.splitlines():
-        if line.lstrip().startswith("#"):
+        line = re.sub(r"#.*", "", line).strip()
+        if line.startswith("#"):
             continue
 
         line_prefix, line_domain, line_suffix = "", "", ""
@@ -24,20 +49,25 @@ def Convert(base_name, content):
 
         prefix, domain, suffix = "", "", ""
         if line_prefix:
-            prefix = line_prefix.split()[0]
+            prefix = line_prefix.strip()
         if line_domain:
-            domain = line_domain.split()[0]
+            domain = line_domain.strip()
         if line_suffix:
-            suffix = f"_{line_suffix.split()[0]}"
+            suffix = line_suffix.strip()
 
         if suffix not in file_map:
-            file_map[suffix] = open(f"{base_name}{suffix}.list", "w")
+            if suffix:
+                file_map[suffix] = open(f"{category}_{suffix}.list", "w")
+            else:
+                file_map[suffix] = open(f"{category}.list", "w")
 
         if not domain:
             continue
 
         if prefix:
-            if prefix == "full":
+            if prefix == "include":
+                ConvertFormCategory(domain)
+            elif prefix == "full":
                 file_map[suffix].write(f"DOMAIN,{domain}\n")
             else:
                 continue
@@ -48,9 +78,23 @@ def Convert(base_name, content):
         f.close()
 
 
+def ConvertFormCategory(category):
+    if category in parsed_category_list:
+        return
+    parsed_category_list.append(category)
+
+    while True:
+        print(f"convert category {category} ...")
+        try:
+            response = requests.get(f"{url_base}{category}")
+        except Exception as e:
+            print(f"request error: {e}, retry")
+            continue
+
+        ConvertFromContent(category, response.text)
+        break
+
+
 if __name__ == "__main__":
-    for url in url_list:
-        response = requests.get(url)
-        parsed_url = urllib.parse.urlparse(url)
-        file_name = os.path.basename(parsed_url.path)
-        Convert(file_name, response.text)
+    for category in category_list:
+        ConvertFormCategory(category)
