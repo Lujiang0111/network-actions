@@ -764,6 +764,7 @@ add address=93.183.18.0/24 list=CNIP
 add address=93.187.128.0/22 list=CNIP
 add address=94.191.0.0/17 list=CNIP
 add address=98.96.246.0/23 list=CNIP
+add address=98.158.28.0/22 list=CNIP
 add address=101.1.0.0/22 list=CNIP
 add address=101.2.172.0/22 list=CNIP
 add address=101.4.0.0/14 list=CNIP
