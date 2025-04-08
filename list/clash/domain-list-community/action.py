@@ -4,6 +4,7 @@ import requests
 category_url_base = "https://raw.githubusercontent.com/v2fly/domain-list-community/refs/heads/master/data/"
 
 category_list = [
+    "apple",
     "category-ai-cn",
     "category-ai-!cn",
     "category-communication",
