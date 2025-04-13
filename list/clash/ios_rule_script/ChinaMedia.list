@@ -1,14 +1,14 @@
 # NAME: ChinaMedia
 # AUTHOR: blackmatrix7
 # REPO: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2024-07-03 16:16:36
-# DOMAIN: 71
+# UPDATED: 2025-04-13 02:13:42
+# DOMAIN: 67
 # DOMAIN-KEYWORD: 2
-# DOMAIN-SUFFIX: 236
-# IP-CIDR: 50
+# DOMAIN-SUFFIX: 252
+# IP-CIDR: 55
 # IP-CIDR6: 29
 # PROCESS-NAME: 6
-# TOTAL: 394
+# TOTAL: 411
 DOMAIN,0gr4uqmtt8y41hcjsgrzdrc31.ourdvsss.com
 DOMAIN,0gr4uqmtt8y41hcjsgrzdrc3s.ourdvsss.com
 DOMAIN,0gr4uqmtt8y41hcjsgrzdrc3z.ourdvsss.com
@@ -58,10 +58,6 @@ DOMAIN,3geauymtsgrzdnqbofa5dy.ourdvsss.com
 DOMAIN,3geauymtsgrzdrcbzfahue.ourdvsss.com
 DOMAIN,3geauymtsgrzdrcbzfahuk.ourdvsss.com
 DOMAIN,4go41hcjtgazdoctqge4o.ourdvsss.com
-DOMAIN,p-bstarstatic.akamaized.net
-DOMAIN,p.bstarstatic.com
-DOMAIN,upos-bstar-mirrorakam.akamaized.net
-DOMAIN,upos-bstar1-mirrorakam.akamaized.net
 DOMAIN,00713915daab0be43def5c338c02c80b.dlied1.cdntips.net
 DOMAIN,17caa75e77d31e1f5a7841e0b3374569.dlied1.cdntips.net
 DOMAIN,apd-pcdnvodstat.teg.tencent-cloud.net
@@ -212,6 +208,17 @@ DOMAIN-SUFFIX,cibntv.net
 DOMAIN-SUFFIX,cm.fancyapi.com
 DOMAIN-SUFFIX,cmvideo.cn
 DOMAIN-SUFFIX,dmhmusic.com
+DOMAIN-SUFFIX,domesticmedia.cc
+DOMAIN-SUFFIX,domesticmedia.cn
+DOMAIN-SUFFIX,domesticmedia.co
+DOMAIN-SUFFIX,domesticmedia.com
+DOMAIN-SUFFIX,domesticmedia.net
+DOMAIN-SUFFIX,domesticmedia.tv
+DOMAIN-SUFFIX,domesticmediagame.cn
+DOMAIN-SUFFIX,domesticmediagame.co
+DOMAIN-SUFFIX,domesticmediagame.net
+DOMAIN-SUFFIX,domesticmediapay.cn
+DOMAIN-SUFFIX,domesticmediapay.com
 DOMAIN-SUFFIX,e8h2ty.tdum.alibaba.com
 DOMAIN-SUFFIX,gamenow.club
 DOMAIN-SUFFIX,gitv.cn
@@ -255,6 +262,8 @@ DOMAIN-SUFFIX,music.tc.qq.com
 DOMAIN-SUFFIX,music.xiaomi.com
 DOMAIN-SUFFIX,noxagile.duapp.com
 DOMAIN-SUFFIX,ns6mitkxo.cn
+DOMAIN-SUFFIX,p-bstarstatic.akamaized.net
+DOMAIN-SUFFIX,p.bstarstatic.com
 DOMAIN-SUFFIX,pgdt.gtimg.cn
 DOMAIN-SUFFIX,pplive.cn
 DOMAIN-SUFFIX,pps.tv
@@ -287,9 +296,12 @@ DOMAIN-SUFFIX,tazai.com
 DOMAIN-SUFFIX,tencentmusic.com
 DOMAIN-SUFFIX,tudou.com
 DOMAIN-SUFFIX,ukoo.com.cn
+DOMAIN-SUFFIX,upos-bstar-mirrorakam.akamaized.net
+DOMAIN-SUFFIX,upos-bstar1-mirrorakam.akamaized.net
 DOMAIN-SUFFIX,v-56.com
 DOMAIN-SUFFIX,v.qq.com
 DOMAIN-SUFFIX,v.smtcdns.com
+DOMAIN-SUFFIX,v1d.szbdyd.com
 DOMAIN-SUFFIX,video.qq.com
 DOMAIN-SUFFIX,videojj.com
 DOMAIN-SUFFIX,wenyupages.com
