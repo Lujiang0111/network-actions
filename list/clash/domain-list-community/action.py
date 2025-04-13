@@ -27,7 +27,8 @@ custom_url_base = "https://raw.githubusercontent.com/Lujiang0111/Scripts/refs/he
 
 custom_list = [
     "custom_cloud_cn",
-    "custom_cloud_!cn",
+    "custom_netdisk_cn",
+    "custom_netdisk_!cn",
     "custom_porn",
 ]
 
