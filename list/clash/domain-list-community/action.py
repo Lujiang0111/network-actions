@@ -26,7 +26,8 @@ category_list = [
 custom_url_base = "https://raw.githubusercontent.com/Lujiang0111/Scripts/refs/heads/main/Openwrt/Clash/domain-list-community/"
 
 custom_list = [
-    "custom_cloud",
+    "custom_cloud_cn",
+    "custom_cloud_!cn",
     "custom_porn",
 ]
 
