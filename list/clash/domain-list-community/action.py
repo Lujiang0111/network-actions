@@ -20,6 +20,7 @@ category_list = [
     "google",
     "microsoft",
     "mikrotik",
+    "pikpak",
     "steam",
 ]
 
