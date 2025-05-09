@@ -16,6 +16,7 @@ category_list = [
     "category-ntp",
     "category-pt",
     "category-social-media-!cn",
+    "docker",
     "github",
     "google",
     "microsoft",
