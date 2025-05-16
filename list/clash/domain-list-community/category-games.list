@@ -233,9 +233,6 @@ DOMAIN-SUFFIX,twinmotion.com
 DOMAIN-SUFFIX,unrealengine.com
 DOMAIN-SUFFIX,unrealtournament.com
 DOMAIN-REGEX,^epicgames-download\d\.akamaized\.net$
-DOMAIN-SUFFIX,tarkov.com
-DOMAIN-SUFFIX,eft-store.com
-DOMAIN-SUFFIX,escapefromtarkov.com
 DOMAIN,avatargarenanow-a.akamaihd.net
 DOMAIN,cdngarenanow-a.akamaihd.net
 DOMAIN,dlgarenanow-a.akamaihd.net
