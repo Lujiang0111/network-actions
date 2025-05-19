@@ -29,6 +29,11 @@ DOMAIN-SUFFIX,bluearchive.jp
 DOMAIN-SUFFIX,bluearchive.nexon.com
 DOMAIN-SUFFIX,curseforge.com
 DOMAIN-SUFFIX,forgecdn.net
+DOMAIN-SUFFIX,cygames.jp
+DOMAIN-SUFFIX,cygames.co.jp
+DOMAIN-SUFFIX,worldflipper.jp
+DOMAIN-SUFFIX,worldflipper.akamaized.net
+DOMAIN-SUFFIX,umamusume.akamaized.net
 DOMAIN-SUFFIX,dawngate.com
 DOMAIN-SUFFIX,eastore.com
 DOMAIN-SUFFIX,lordofultima.com
@@ -247,6 +252,8 @@ DOMAIN-SUFFIX,garena.tw
 DOMAIN-SUFFIX,garena.vn
 DOMAIN-SUFFIX,garenanow.com
 DOMAIN-SUFFIX,seagroup.com
+DOMAIN-SUFFIX,gog.com
+DOMAIN-SUFFIX,gog-statics.com
 DOMAIN-SUFFIX,illusion.co.jp
 DOMAIN-SUFFIX,illusion.jp
 DOMAIN-SUFFIX,itch.io
@@ -463,6 +470,8 @@ DOMAIN-SUFFIX,rsg.sc
 DOMAIN,gamedownloads-rockstargames-com.akamaized.net
 DOMAIN,media-rockstargames-com.akamaized.net
 DOMAIN,videos-rockstargames-com.akamaized.net
+DOMAIN-SUFFIX,snk-corp.co.jp
+DOMAIN-SUFFIX,snkplaymore.info
 DOMAIN-SUFFIX,playartifact.com
 DOMAIN-SUFFIX,s.team
 DOMAIN-SUFFIX,steam.tv
@@ -568,6 +577,7 @@ DOMAIN-SUFFIX,xboxplayanywhere.com
 DOMAIN-SUFFIX,xboxservices.com
 DOMAIN-SUFFIX,xboxstudios.com
 DOMAIN-SUFFIX,xbx.lv
+DOMAIN-SUFFIX,ynoproject.net
 DOMAIN-SUFFIX,dodi-repacks.download
 DOMAIN-SUFFIX,dodi-repacks.site
 DOMAIN-SUFFIX,fabricmc.net
