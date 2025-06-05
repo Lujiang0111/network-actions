@@ -26,6 +26,7 @@ category_list = [
     "github",
     "google",
     "microsoft",
+    "steam",
 ]
 
 custom_url_base = "https://raw.githubusercontent.com/Lujiang0111/Scripts/refs/heads/main/Openwrt/Clash/domain-list-community/"
