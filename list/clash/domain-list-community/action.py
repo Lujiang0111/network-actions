@@ -95,8 +95,8 @@ def RequstUrl(category, url) -> str:
             response = requests.get(f"{url}")
         except Exception as e:
             if retry_times < 5:
-                print(f"request error: {e}, retry")
                 retry_times += 1
+                print(f"request error: {e}, retry times={retry_times}")
                 continue
             else:
                 print(f"request error: {e}, ignore")
