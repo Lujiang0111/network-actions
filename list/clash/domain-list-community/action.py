@@ -25,7 +25,7 @@ category_list = [
     "docker",
     "github",
     "google",
-    "microsoft"
+    "microsoft",
 ]
 
 custom_url_base = "https://raw.githubusercontent.com/Lujiang0111/Scripts/refs/heads/main/Openwrt/Clash/domain-list-community/"
@@ -88,13 +88,19 @@ def ConvertFromContent(category, content, file_map):
 
 
 def RequstUrl(category, url) -> str:
+    retry_times = 0
     while True:
         print(f"request category={category}, url={url}...")
         try:
             response = requests.get(f"{url}")
         except Exception as e:
-            print(f"request error: {e}, retry")
-            continue
+            if retry_times < 5:
+                print(f"request error: {e}, retry")
+                retry_times += 1
+                continue
+            else:
+                print(f"request error: {e}, ignore")
+                break
         break
     return response.text
 
