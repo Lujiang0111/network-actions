@@ -7,31 +7,35 @@ category_list = [
     "apple",
     "category-ai-cn",
     "category-ai-!cn",
+    "category-cas",
+    "category-collaborate-cn",
     "category-communication",
     "category-container",
     "category-entertainment",
     "category-entertainment-cn",
     "category-games",
+    "category-game-accelerator-cn",
+    "category-game-platforms-download",
     "category-netdisk-cn",
     "category-ntp",
     "category-pt",
     "category-social-media-!cn",
+    "category-social-media-cn",
+    "category-speedtest",
     "docker",
     "github",
     "google",
-    "microsoft",
-    "mikrotik",
-    "pikpak",
-    "steam",
+    "microsoft"
 ]
 
 custom_url_base = "https://raw.githubusercontent.com/Lujiang0111/Scripts/refs/heads/main/Openwrt/Clash/domain-list-community/"
 
 custom_list = [
-    "custom_cloud_cn",
-    "custom_netdisk_cn",
-    "custom_netdisk_!cn",
-    "custom_porn",
+    "custom-cloud",
+    "custom-cloud-cn",
+    "custom-netdisk",
+    "custom-netdisk-cn",
+    "custom-porn",
 ]
 
 
