@@ -1,122 +1,144 @@
 import re
+import sys
+import urllib.parse
 import requests
-
-category_url_base = "https://raw.githubusercontent.com/v2fly/domain-list-community/refs/heads/master/data/"
-
-category_list = [
-    "apple",
-    "category-ai-cn",
-    "category-ai-!cn",
-    "category-cas",
-    "category-collaborate-cn",
-    "category-communication",
-    "category-container",
-    "category-entertainment",
-    "category-entertainment-cn",
-    "category-games",
-    "category-game-accelerator-cn",
-    "category-game-platforms-download",
-    "category-netdisk-cn",
-    "category-ntp",
-    "category-pt",
-    "category-social-media-!cn",
-    "category-social-media-cn",
-    "category-speedtest",
-    "docker",
-    "github",
-    "google",
-    "microsoft",
-    "steam",
-]
-
-custom_url_base = "https://raw.githubusercontent.com/Lujiang0111/Scripts/refs/heads/main/Openwrt/Clash/domain-list-community/"
-
-custom_list = [
-    "custom-cloud",
-    "custom-cloud-cn",
-    "custom-netdisk",
-    "custom-netdisk-cn",
-    "custom-porn",
-]
+import urllib
 
 
-def ConvertFromContent(category, content, file_map):
-    for line in content.splitlines():
-        line = re.sub(r"#.*", "", line).strip()
-        if line.startswith("#"):
-            continue
+class Action:
+    __category_url_base = "https://raw.githubusercontent.com/v2fly/domain-list-community/refs/heads/master/data/"
+    __category_list = [
+        "apple",
+        "category-ai-cn",
+        "category-ai-!cn",
+        "category-cas",
+        "category-collaborate-cn",
+        "category-communication",
+        "category-container",
+        "category-entertainment",
+        "category-entertainment-cn",
+        "category-games",
+        "category-game-accelerator-cn",
+        "category-game-platforms-download",
+        "category-netdisk-cn",
+        "category-ntp",
+        "category-pt",
+        "category-social-media-!cn",
+        "category-social-media-cn",
+        "category-speedtest",
+        "docker",
+        "github",
+        "google",
+        "microsoft",
+        "steam",
+    ]
 
-        line_prefix, line_domain, line_suffix = "", "", ""
-        if "@" in line:
-            line, line_suffix = line.rsplit("@", 1)
+    __custom_url_base = "https://raw.githubusercontent.com/Lujiang0111/Scripts/refs/heads/main/Openwrt/Clash/domain-list-community/"
+    __custom_list = [
+        "custom-cloud",
+        "custom-cloud-cn",
+        "custom-netdisk",
+        "custom-netdisk-cn",
+        "custom-porn",
+    ]
 
-        if ":" in line:
-            line_prefix, line_domain = line.split(":", 1)
-        else:
-            line_domain = line
+    __url_dic = {}
 
-        prefix, domain, suffix = "", "", ""
-        if line_prefix:
-            prefix = line_prefix.strip()
-        if line_domain:
-            domain = line_domain.strip()
-        if line_suffix:
-            suffix = line_suffix.strip()
+    def main(self, args) -> None:
+        for category in self.__category_list:
+            self.parse_head_category(self.__category_url_base, category)
 
-        if suffix not in file_map:
-            if suffix:
-                file_map[suffix] = open(f"{category}_{suffix}.list", "w")
-            else:
-                file_map[suffix] = open(f"{category}.list", "w")
+        for category in self.__custom_list:
+            self.parse_head_category(self.__custom_url_base, category)
 
-        if not domain:
-            continue
+    def request_url(self, url_base, category) -> str:
+        url = urllib.parse.urljoin(url_base, category)
+        if url in self.__url_dic:
+            return self.__url_dic[url]
 
-        if prefix:
-            if prefix == "include":
-                if domain.startswith("category-"):
+        retry_times = 0
+        while True:
+            print(f"request category={category}, url={url}...")
+            try:
+                response = requests.get(f"{url}")
+            except Exception as e:
+                if retry_times < 5:
+                    retry_times += 1
+                    print(f"request error: {e}, retry times={retry_times}")
                     continue
-                sub_content = RequstUrl(category, f"{category_url_base}{domain}")
-                ConvertFromContent(category, sub_content, file_map)
-            elif prefix == "full":
-                file_map[suffix].write(f"DOMAIN,{domain}\n")
-            elif prefix == "regexp":
-                file_map[suffix].write(f"DOMAIN-REGEX,{domain}\n")
-            else:
-                continue
-        else:
-            file_map[suffix].write(f"DOMAIN-SUFFIX,{domain}\n")
+                else:
+                    print(f"request error: {e}, ignore")
+                    break
+            break
 
+        self.__url_dic[url] = response.text
+        return self.__url_dic[url]
 
-def RequstUrl(category, url) -> str:
-    retry_times = 0
-    while True:
-        print(f"request category={category}, url={url}...")
-        try:
-            response = requests.get(f"{url}")
-        except Exception as e:
-            if retry_times < 5:
-                retry_times += 1
-                print(f"request error: {e}, retry times={retry_times}")
+    def parse_head_category(self, url_base, category) -> None:
+        file_dic = {}
+        category_dic = {}
+        self.parse_category(category, url_base, category, file_dic, category_dic)
+        for f in file_dic.values():
+            f.close()
+
+    def parse_category(
+        self, file_prefix, url_base, category, file_dic, category_dic
+    ) -> None:
+        if category in category_dic:
+            return
+        category_dic[category] = True
+
+        content = self.request_url(url_base, category)
+        for line in content.splitlines():
+            line = re.sub(r"#.*", "", line).strip()
+            if line.startswith("#"):
                 continue
+
+            line_prefix, line_domain, line_suffix = "", "", ""
+            if "@" in line:
+                line, line_suffix = line.rsplit("@", 1)
+
+            if ":" in line:
+                line_prefix, line_domain = line.split(":", 1)
             else:
-                print(f"request error: {e}, ignore")
-                break
-        break
-    return response.text
+                line_domain = line
+
+            prefix, domain, suffix = "", "", ""
+            if line_prefix:
+                prefix = line_prefix.strip()
+            if line_domain:
+                domain = line_domain.strip()
+            if line_suffix:
+                suffix = line_suffix.strip()
+
+            if suffix not in file_dic:
+                if suffix:
+                    file_dic[suffix] = open(f"{file_prefix}_{suffix}.list", "w")
+                else:
+                    file_dic[suffix] = open(f"{file_prefix}.list", "w")
+
+            if not domain:
+                continue
+
+            if prefix:
+                if prefix == "include":
+                    self.parse_category(
+                        file_prefix,
+                        self.__category_url_base,
+                        domain,
+                        file_dic,
+                        category_dic,
+                    )
+                elif prefix == "full":
+                    file_dic[suffix].write(f"DOMAIN,{domain}\n")
+                elif prefix == "regexp":
+                    file_dic[suffix].write(f"DOMAIN-REGEX,{domain}\n")
+                else:
+                    continue
+            else:
+                file_dic[suffix].write(f"DOMAIN-SUFFIX,{domain}\n")
 
 
 if __name__ == "__main__":
-    for category in category_list:
-        content = RequstUrl(category, f"{category_url_base}{category}")
-        file_map = {}
-        ConvertFromContent(category, content, file_map)
-        for f in file_map.values():
-            f.close()
-
-    for category in custom_list:
-        content = RequstUrl(category, f"{custom_url_base}{category}")
-        file_map = {}
-        ConvertFromContent(category, content, file_map)
-        for f in file_map.values():
-            f.close()
+    prebuild = Action()
+    prebuild.main(sys.argv)
