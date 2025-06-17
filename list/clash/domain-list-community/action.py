@@ -38,8 +38,12 @@ class Action:
     ]
 
     __url_dic = {}
+    __category_blacklist = {}
 
     def main(self, args) -> None:
+        self.__category_blacklist["category-entertainment"] = ["category-games-!cn"]
+        self.__category_blacklist["category-entertainment-cn"] = ["category-games-cn"]
+
         for category in self.__category_list:
             self.parse_head_category(self.__category_url_base, category)
         for category in self.__custom_list:
@@ -82,6 +86,10 @@ class Action:
             return
         category_dic[category] = True
 
+        category_blacklist = []
+        if category in self.__category_blacklist:
+            category_blacklist = self.__category_blacklist[category]
+
         content = self.request_url(url_base, category)
         for line in content.splitlines():
             line = re.sub(r"#.*", "", line).strip()
@@ -112,6 +120,9 @@ class Action:
                     file_dic[suffix] = open(f"{file_prefix}.list", "w")
 
             if not domain:
+                continue
+
+            if domain in category_blacklist:
                 continue
 
             if prefix:
