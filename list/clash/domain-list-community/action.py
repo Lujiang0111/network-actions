@@ -8,26 +8,26 @@ import urllib
 class Action:
     __category_url_base = "https://raw.githubusercontent.com/v2fly/domain-list-community/refs/heads/master/data/"
     __category_list = [
+        "steam",
+        "category-ai-cn",
+        "category-ai-!cn",
+        "category-collaborate-cn",
+        "category-communication",
+        "category-dev",
+        "category-container",
+        "category-entertainment",
+        "category-entertainment-cn",
         "category-game-platforms-download",
         "category-games",
-        "category-ai-cn",
-        "category-collaborate-cn",
-        "category-entertainment-cn",
+        "category-pt",
         "category-social-media-cn",
+        "category-social-media-!cn",
         "docker",
         "github",
-        "steam",
-        "category-communication",
-        "category-container",
         "microsoft",
         "apple",
         "google",
         "nvidia",
-        "category-dev",
-        "category-pt",
-        "category-ai-!cn",
-        "category-entertainment",
-        "category-social-media-!cn",
     ]
 
     __custom_url_base = "https://raw.githubusercontent.com/Lujiang0111/Scripts/refs/heads/main/Openwrt/Clash/domain-list-community/"
@@ -40,13 +40,10 @@ class Action:
     __url_dic = {}
 
     def main(self, args) -> None:
-        category_dic = {}
         for category in self.__category_list:
-            self.parse_head_category(self.__category_url_base, category, category_dic)
-
-        category_dic = {}
+            self.parse_head_category(self.__category_url_base, category)
         for category in self.__custom_list:
-            self.parse_head_category(self.__custom_url_base, category, category_dic)
+            self.parse_head_category(self.__custom_url_base, category)
 
     def request_url(self, url_base, category) -> str:
         url = urllib.parse.urljoin(url_base, category)
@@ -71,8 +68,9 @@ class Action:
         self.__url_dic[url] = response.text
         return self.__url_dic[url]
 
-    def parse_head_category(self, url_base, category, category_dic) -> None:
+    def parse_head_category(self, url_base, category) -> None:
         file_dic = {}
+        category_dic = {}
         self.parse_category(category, url_base, category, file_dic, category_dic)
         for f in file_dic.values():
             f.close()
