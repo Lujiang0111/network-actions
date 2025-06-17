@@ -8,6 +8,8 @@ import urllib
 class Action:
     __category_url_base = "https://raw.githubusercontent.com/v2fly/domain-list-community/refs/heads/master/data/"
     __category_list = [
+        "category-game-platforms-download",
+        "category-games",
         "category-ai-cn",
         "category-collaborate-cn",
         "category-entertainment-cn",
@@ -17,8 +19,6 @@ class Action:
         "steam",
         "category-communication",
         "category-container",
-        "category-game-platforms-download",
-        "category-games",
         "microsoft",
         "apple",
         "google",
