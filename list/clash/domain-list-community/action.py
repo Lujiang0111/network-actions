@@ -22,10 +22,12 @@ class Action:
         "category-games",
         "category-pt",
         "category-communication",
+        "category-dev",
         "category-entertainment",
         "category-entertainment-cn",
         "category-social-media-!cn",
         "category-social-media-cn",
+        "nvidia",
     ]
 
     __custom_url_base = "https://raw.githubusercontent.com/Lujiang0111/Scripts/refs/heads/main/Openwrt/Clash/domain-list-community/"
