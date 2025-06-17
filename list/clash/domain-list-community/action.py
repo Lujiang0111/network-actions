@@ -39,12 +39,12 @@ class Action:
     ]
 
     __url_dic = {}
-    __category_blacklist = {}
+    __category_blacklist = {
+        "category-entertainment": ["category-games-!cn"],
+        "category-entertainment-cn": ["category-games-cn"],
+    }
 
     def main(self, args) -> None:
-        self.__category_blacklist["category-entertainment"] = ["category-games-!cn"]
-        self.__category_blacklist["category-entertainment-cn"] = ["category-games-cn"]
-
         for category in self.__category_list:
             self.parse_head_category(self.__category_url_base, category)
         for category in self.__custom_list:
