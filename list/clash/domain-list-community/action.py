@@ -42,6 +42,7 @@ class Action:
     __category_blacklist = {
         "category-entertainment": ["category-games-!cn"],
         "category-entertainment-cn": ["category-games-cn"],
+        "microsoft": ["microsoft-dev"],
     }
 
     def main(self, args) -> None:
