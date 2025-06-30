@@ -800,7 +800,6 @@ add address=101.52.232.0/23 list=CNIP
 add address=101.52.236.0/22 list=CNIP
 add address=101.52.240.0/20 list=CNIP
 add address=101.53.100.0/22 list=CNIP
-add address=101.55.59.0/24 list=CNIP
 add address=101.64.0.0/13 list=CNIP
 add address=101.72.0.0/14 list=CNIP
 add address=101.76.0.0/15 list=CNIP
@@ -1985,6 +1984,7 @@ add address=116.78.0.0/16 list=CNIP
 add address=116.85.0.0/22 list=CNIP
 add address=116.85.13.0/24 list=CNIP
 add address=116.85.14.0/23 list=CNIP
+add address=116.85.16.0/24 list=CNIP
 add address=116.85.64.0/20 list=CNIP
 add address=116.85.240.0/20 list=CNIP
 add address=116.90.80.0/20 list=CNIP
@@ -2076,10 +2076,7 @@ add address=117.48.128.0/19 list=CNIP
 add address=117.48.160.0/20 list=CNIP
 add address=117.48.192.0/20 list=CNIP
 add address=117.48.216.0/21 list=CNIP
-add address=117.48.224.0/21 list=CNIP
-add address=117.48.232.0/23 list=CNIP
-add address=117.48.234.0/24 list=CNIP
-add address=117.48.236.0/22 list=CNIP
+add address=117.48.224.0/20 list=CNIP
 add address=117.50.0.0/16 list=CNIP
 add address=117.51.128.0/19 list=CNIP
 add address=117.51.160.0/23 list=CNIP
