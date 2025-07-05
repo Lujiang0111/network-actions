@@ -3263,7 +3263,7 @@ add address=205.198.19.0/24 list=CNIP
 add address=206.237.112.0/20 list=CNIP
 add address=210.2.0.0/23 list=CNIP
 add address=210.2.4.0/24 list=CNIP
-add address=210.5.0.0/19 list=CNIP
+add address=210.5.6.0/23 list=CNIP
 add address=210.5.128.0/19 list=CNIP
 add address=210.12.0.0/16 list=CNIP
 add address=210.13.0.0/17 list=CNIP
@@ -3805,7 +3805,8 @@ add address=222.240.0.0/13 list=CNIP
 add address=222.248.0.0/15 list=CNIP
 add address=223.0.1.0/24 list=CNIP
 add address=223.0.2.0/24 list=CNIP
-add address=223.0.8.0/22 list=CNIP
+add address=223.0.8.0/23 list=CNIP
+add address=223.0.10.0/24 list=CNIP
 add address=223.0.12.0/23 list=CNIP
 add address=223.0.15.0/24 list=CNIP
 add address=223.0.16.0/24 list=CNIP
