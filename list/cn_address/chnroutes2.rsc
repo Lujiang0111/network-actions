@@ -43,7 +43,7 @@ add address=8.148.64.0/18 list=CNIP
 add address=8.148.128.0/17 list=CNIP
 add address=8.149.0.0/16 list=CNIP
 add address=8.150.0.0/20 list=CNIP
-add address=8.150.16.0/22 list=CNIP
+add address=8.150.16.0/21 list=CNIP
 add address=8.150.64.0/23 list=CNIP
 add address=8.152.0.0/13 list=CNIP
 add address=8.160.0.0/15 list=CNIP
