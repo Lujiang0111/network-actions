@@ -1,3 +1,5 @@
+import os
+from pathlib import Path
 import re
 import sys
 import urllib.parse
@@ -20,6 +22,7 @@ class Action:
         "category-entertainment-cn",
         "category-game-platforms-download",
         "category-games",
+        "category-ntp",
         "category-pt",
         "category-social-media-cn",
         "category-social-media-!cn",
@@ -46,6 +49,9 @@ class Action:
     }
 
     def main(self, args) -> None:
+        env_dir = Path(__file__).resolve().parent
+        os.chdir(env_dir)
+
         for category in self.__category_list:
             self.parse_head_category(self.__category_url_base, category)
         for category in self.__custom_list:
