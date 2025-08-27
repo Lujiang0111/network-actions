@@ -80,6 +80,13 @@ DOMAIN-SUFFIX,boomerang.com
 DOMAIN-SUFFIX,wbdnbo.net
 DOMAIN-SUFFIX,catchplay.com
 DOMAIN-SUFFIX,tra-ww000-cp.akamaized.net
+DOMAIN-SUFFIX,2025copy.com
+DOMAIN-SUFFIX,copy-manga.com
+DOMAIN-SUFFIX,copy20.com
+DOMAIN-SUFFIX,copy2000.online
+DOMAIN-SUFFIX,mangacopy.com
+DOMAIN-SUFFIX,mangafuna.xyz
+DOMAIN-SUFFIX,mangafunb.fun
 DOMAIN-SUFFIX,dailymotion.com
 DOMAIN-SUFFIX,dm-event.net
 DOMAIN-SUFFIX,dmcdn.net
@@ -606,7 +613,7 @@ DOMAIN-SUFFIX,visualarts.gr.jp
 DOMAIN-SUFFIX,visual-arts.jp
 DOMAIN-SUFFIX,viu.tv
 DOMAIN,api.viu.now.com
-DOMAIN-REGEX,^ewcdn[0-9]{2}\.nowe\.com$
+DOMAIN-REGEX,^ewcdn[0-9]+\.nowe\.com$
 DOMAIN-SUFFIX,viu.com
 DOMAIN,dfp6rglgjqszk.cloudfront.net
 DOMAIN,d1k2us671qcoau.cloudfront.net
