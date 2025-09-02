@@ -38,7 +38,9 @@ class Action:
     __custom_list = [
         "custom-cloud",
         "custom-cloud-cn",
+        "custom-direct",
         "custom-porn",
+        "custom-proxy",
     ]
 
     __url_dic = {}
