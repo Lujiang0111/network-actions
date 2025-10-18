@@ -1515,5 +1515,6 @@ DOMAIN-SUFFIX,xn--hxtr4rozx.xn--czr694b
 DOMAIN-SUFFIX,xn--kput3imi374g.xn--hxt814e
 DOMAIN-SUFFIX,xn--ruq8a011kt6y.xn--hxt814e
 DOMAIN,apple.com.akadns.net
-DOMAIN,courier-push-apple.com.akadns.net
+DOMAIN,configuration-lb.ls-apple.com.akadns.net
 DOMAIN,push-apple.com.akadns.net
+DOMAIN-SUFFIX,courier-push-apple.com.akadns.net
