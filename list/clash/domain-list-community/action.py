@@ -10,44 +10,40 @@ import urllib
 class Action:
     __category_url_base = "https://raw.githubusercontent.com/v2fly/domain-list-community/refs/heads/master/data/"
     __category_list = [
-        "steam",
+        "amazon",
         "category-ai-cn",
         "category-ai-!cn",
         "category-collaborate-cn",
         "category-communication",
         "category-container",
-        "category-dev",
-        "category-dev-cn",
         "category-entertainment",
         "category-entertainment-cn",
         "category-game-platforms-download",
         "category-games",
         "category-ntp",
         "category-pt",
+        "category-remote-control",
         "category-social-media-cn",
         "category-social-media-!cn",
         "docker",
         "github",
-        "microsoft",
-        "apple",
         "google",
-        "nvidia",
+        "microsoft",
+        "steam",
     ]
 
     __custom_url_base = "https://raw.githubusercontent.com/Lujiang0111/Scripts/refs/heads/main/Openwrt/Clash/domain-list-community/"
     __custom_list = [
+        "custom-direct",
+        "custom-proxy",
         "custom-cloud",
         "custom-cloud-cn",
-        "custom-direct",
-        "custom-porn",
-        "custom-proxy",
     ]
 
     __url_dic = {}
     __category_blacklist = {
         "category-entertainment": ["category-games-!cn"],
         "category-entertainment-cn": ["category-games-cn"],
-        "microsoft": ["microsoft-dev"],
     }
 
     def main(self, args) -> None:
@@ -84,18 +80,11 @@ class Action:
 
     def parse_head_category(self, url_base, category) -> None:
         file_dic = {}
-        category_dic = {}
-        self.parse_category(category, url_base, category, file_dic, category_dic)
+        self.parse_category(category, url_base, category, file_dic)
         for f in file_dic.values():
             f.close()
 
-    def parse_category(
-        self, file_prefix, url_base, category, file_dic, category_dic
-    ) -> None:
-        if category in category_dic:
-            return
-        category_dic[category] = True
-
+    def parse_category(self, file_prefix, url_base, category, file_dic) -> None:
         category_blacklist = []
         if category in self.__category_blacklist:
             category_blacklist = self.__category_blacklist[category]
@@ -142,7 +131,6 @@ class Action:
                         self.__category_url_base,
                         domain,
                         file_dic,
-                        category_dic,
                     )
                 elif prefix == "full":
                     file_dic[suffix].write(f"DOMAIN,{domain}\n")
