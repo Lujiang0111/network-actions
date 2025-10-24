@@ -34,3 +34,10 @@ DOMAIN-SUFFIX,rarbgunblock.com
 DOMAIN-SUFFIX,rarbgunblock.org
 DOMAIN-SUFFIX,rarbgunblocked.org
 DOMAIN-SUFFIX,rarbgway.org
+DOMAIN-SUFFIX,jav.app
+DOMAIN-SUFFIX,javdb.com
+DOMAIN-SUFFIX,jdbimgs.com
+DOMAIN-SUFFIX,jdbstatic.com
+DOMAIN-REGEX,javdb\d+\.com$
+DOMAIN-SUFFIX,konachan.com
+DOMAIN-SUFFIX,konachan.net
