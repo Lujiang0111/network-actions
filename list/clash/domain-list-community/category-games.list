@@ -55,6 +55,11 @@ DOMAIN-SUFFIX,youba.com
 DOMAIN-SUFFIX,yxhhdl.com
 DOMAIN-SUFFIX,cowlevel.net
 DOMAIN-SUFFIX,cdncl.net
+DOMAIN-SUFFIX,hero.com
+DOMAIN-SUFFIX,herogame.com
+DOMAIN-SUFFIX,heroesports.com
+DOMAIN-SUFFIX,shyxhy.com
+DOMAIN-SUFFIX,yingxiong.com
 DOMAIN-SUFFIX,tgbus.com
 DOMAIN-SUFFIX,tiancity.com
 DOMAIN-SUFFIX,tiancitycdn.com
@@ -690,10 +695,13 @@ DOMAIN-SUFFIX,fanatical.com
 DOMAIN-SUFFIX,fitgirl-repacks.site
 DOMAIN-SUFFIX,game-repack.site
 DOMAIN-SUFFIX,humblebundle.com
+DOMAIN-SUFFIX,joinsquad.com
 DOMAIN-SUFFIX,loverslab.com
 DOMAIN-SUFFIX,minecraft.wiki
 DOMAIN-SUFFIX,modrinth.com
 DOMAIN-SUFFIX,nexusmods.com
+DOMAIN-SUFFIX,offworldindustries.com
+DOMAIN-SUFFIX,offworldindustries.net
 DOMAIN-SUFFIX,papermc.io
 DOMAIN-SUFFIX,planetminecraft.com
 DOMAIN-SUFFIX,prismlauncher.org
