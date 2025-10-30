@@ -38,8 +38,7 @@ add address=8.136.0.0/13 list=CNIP
 add address=8.144.0.0/14 list=CNIP
 add address=8.148.0.0/19 list=CNIP
 add address=8.148.36.0/22 list=CNIP
-add address=8.148.40.0/23 list=CNIP
-add address=8.148.43.0/24 list=CNIP
+add address=8.148.40.0/22 list=CNIP
 add address=8.148.64.0/18 list=CNIP
 add address=8.148.128.0/17 list=CNIP
 add address=8.149.0.0/16 list=CNIP
@@ -966,7 +965,6 @@ add address=103.53.208.0/24 list=CNIP
 add address=103.53.211.0/24 list=CNIP
 add address=103.55.172.0/22 list=CNIP
 add address=103.55.228.0/22 list=CNIP
-add address=103.56.32.0/22 list=CNIP
 add address=103.56.60.0/22 list=CNIP
 add address=103.56.76.0/22 list=CNIP
 add address=103.56.100.0/22 list=CNIP
@@ -1366,7 +1364,6 @@ add address=103.243.252.0/22 list=CNIP
 add address=103.244.59.0/24 list=CNIP
 add address=103.244.64.0/22 list=CNIP
 add address=103.244.80.0/22 list=CNIP
-add address=103.244.164.0/22 list=CNIP
 add address=103.244.232.0/22 list=CNIP
 add address=103.245.128.0/22 list=CNIP
 add address=103.246.152.0/22 list=CNIP
@@ -1770,6 +1767,7 @@ add address=114.132.0.0/16 list=CNIP
 add address=114.135.0.0/16 list=CNIP
 add address=114.138.0.0/15 list=CNIP
 add address=114.141.128.0/18 list=CNIP
+add address=114.142.136.0/23 list=CNIP
 add address=114.196.0.0/15 list=CNIP
 add address=114.212.0.0/14 list=CNIP
 add address=114.216.0.0/13 list=CNIP
@@ -1903,7 +1901,7 @@ add address=116.207.0.0/16 list=CNIP
 add address=116.208.0.0/14 list=CNIP
 add address=116.214.32.0/19 list=CNIP
 add address=116.214.128.0/22 list=CNIP
-add address=116.214.133.0/24 list=CNIP
+add address=116.214.132.0/23 list=CNIP
 add address=116.214.134.0/24 list=CNIP
 add address=116.224.0.0/12 list=CNIP
 add address=116.242.0.0/16 list=CNIP
@@ -2919,7 +2917,6 @@ add address=183.172.0.0/14 list=CNIP
 add address=183.184.0.0/13 list=CNIP
 add address=183.192.0.0/10 list=CNIP
 add address=188.131.128.0/17 list=CNIP
-add address=192.55.46.0/24 list=CNIP
 add address=192.140.160.0/19 list=CNIP
 add address=192.140.208.0/21 list=CNIP
 add address=192.144.128.0/17 list=CNIP
