@@ -10,7 +10,6 @@ import urllib
 class Action:
     __category_url_base = "https://raw.githubusercontent.com/v2fly/domain-list-community/refs/heads/master/data/"
     __category_list = [
-        "amazon",
         "category-ai-cn",
         "category-ai-!cn",
         "category-collaborate-cn",
@@ -19,7 +18,6 @@ class Action:
         "category-entertainment",
         "category-entertainment-cn",
         "category-game-platforms-download",
-        "category-games",
         "category-ntp",
         "category-pt",
         "category-remote-control",
@@ -29,7 +27,10 @@ class Action:
         "github",
         "google",
         "microsoft",
+        "nintendo",
+        "playstation",
         "steam",
+        "xbox",
     ]
 
     __custom_url_base = "https://raw.githubusercontent.com/Lujiang0111/Scripts/refs/heads/main/Openwrt/Clash/domain-list-community/"
