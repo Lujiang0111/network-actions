@@ -10,6 +10,7 @@ import urllib
 class Action:
     __category_url_base = "https://raw.githubusercontent.com/v2fly/domain-list-community/refs/heads/master/data/"
     __category_list = [
+        "bilibili",
         "category-ai-cn",
         "category-ai-!cn",
         "category-collaborate-cn",
