@@ -2008,6 +2008,7 @@ add address=118.31.0.0/16 list=CNIP
 add address=118.64.0.0/21 list=CNIP
 add address=118.64.248.0/21 list=CNIP
 add address=118.66.112.0/23 list=CNIP
+add address=118.66.184.0/24 list=CNIP
 add address=118.66.224.0/20 list=CNIP
 add address=118.72.0.0/13 list=CNIP
 add address=118.80.0.0/15 list=CNIP
