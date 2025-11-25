@@ -61,7 +61,6 @@ DOMAIN-SUFFIX,bing
 DOMAIN-SUFFIX,bing.com
 DOMAIN-SUFFIX,bing.net
 DOMAIN-SUFFIX,bing123.com
-DOMAIN-SUFFIX,bingads.com
 DOMAIN-SUFFIX,bingagencyawards.com
 DOMAIN-SUFFIX,bingapis.com
 DOMAIN-SUFFIX,bingapistatistics.com
@@ -338,7 +337,6 @@ DOMAIN-SUFFIX,microsoft-sap-events.com
 DOMAIN-SUFFIX,microsoft-sbs-domains.com
 DOMAIN-SUFFIX,microsoft365.com
 DOMAIN-SUFFIX,microsoftaccountguard.com
-DOMAIN-SUFFIX,microsoftads.com
 DOMAIN-SUFFIX,microsoftadvertising.com
 DOMAIN-SUFFIX,microsoftadvertisingregionalawards.com
 DOMAIN-SUFFIX,microsoftaffiliates.com
@@ -370,7 +368,6 @@ DOMAIN-SUFFIX,morphcharts.com
 DOMAIN-SUFFIX,mpnevolution.com
 DOMAIN-SUFFIX,ms-studiosmedia.com
 DOMAIN-SUFFIX,ms365surfaceoffer.com
-DOMAIN-SUFFIX,msads.net
 DOMAIN-SUFFIX,msauth.net
 DOMAIN-SUFFIX,mschallenge2018.com
 DOMAIN-SUFFIX,msecnd.net
