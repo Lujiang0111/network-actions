@@ -384,6 +384,9 @@ DOMAIN-SUFFIX,last.fm
 DOMAIN,lastfm.freetls.fastly.net
 DOMAIN-SUFFIX,litv.tv
 DOMAIN-SUFFIX,litvfreepc.akamaized.net
+DOMAIN-SUFFIX,ofiii.com
+DOMAIN,ntdofifreepc-tgc.cdn.hinet.net
+DOMAIN,ntdofifreevcpc-tgc.cdn.hinet.net
 DOMAIN-SUFFIX,manhuagui.com
 DOMAIN-SUFFIX,mubi.com
 DOMAIN-SUFFIX,mubicdn.net
@@ -547,7 +550,6 @@ DOMAIN-SUFFIX,wimpmusic.com
 DOMAIN-SUFFIX,themoviedb.org
 DOMAIN-SUFFIX,tmdb.org
 DOMAIN,tmdb-image-prod.b-cdn.net
-DOMAIN-SUFFIX,thetvdb.com
 DOMAIN-SUFFIX,dogatch.jp
 DOMAIN-SUFFIX,gorin.jp
 DOMAIN-SUFFIX,screens-lab.jp
@@ -824,7 +826,6 @@ DOMAIN-SUFFIX,fireside.fm
 DOMAIN-SUFFIX,internationalsaimoe.com
 DOMAIN-SUFFIX,joox.com
 DOMAIN-SUFFIX,linetv.tw
-DOMAIN-SUFFIX,litv.tv
 DOMAIN-SUFFIX,megaphone.fm
 DOMAIN-SUFFIX,mikanani.me
 DOMAIN-SUFFIX,moov.hk
