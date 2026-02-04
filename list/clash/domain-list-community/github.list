@@ -1,3 +1,4 @@
+DOMAIN-SUFFIX,githubcopilot.com
 DOMAIN-SUFFIX,npm.community
 DOMAIN-SUFFIX,npmjs.com
 DOMAIN-SUFFIX,npmjs.org
@@ -14,7 +15,6 @@ DOMAIN-SUFFIX,github.dev
 DOMAIN-SUFFIX,github.io
 DOMAIN-SUFFIX,githubapp.com
 DOMAIN-SUFFIX,githubassets.com
-DOMAIN-SUFFIX,githubcopilot.com
 DOMAIN-SUFFIX,githubhackathon.com
 DOMAIN-SUFFIX,githubnext.com
 DOMAIN-SUFFIX,githubpreview.dev
