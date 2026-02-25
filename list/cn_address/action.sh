@@ -1,7 +1,5 @@
 #!/bin/bash
 
-# 192.165.0.0/16 : Suma Lan
-
 # update from geolite2
 curl -s https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/geolite2_country/country_cn.netset |
     sed -e '/^#/d' |
@@ -11,7 +9,6 @@ curl -s https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/geolit
         -e '1iremove [/ip firewall address-list find list=CNIP]' \
         -e '1iadd address=10.0.0.0/8 list=CNIP comment=private-network' \
         -e '1iadd address=172.16.0.0/12 list=CNIP comment=private-network' \
-        -e '1iadd address=192.165.0.0/16 list=CNIP comment=private-network' \
         -e '1iadd address=192.168.0.0/16 list=CNIP comment=private-network' \
         -e '1iadd address=224.0.0.0/4 list=CNIP comment=private-network' \
         >geolite2.rsc
@@ -25,7 +22,6 @@ curl -s https://raw.githubusercontent.com/misakaio/chnroutes2/master/chnroutes.t
         -e '1iremove [/ip firewall address-list find list=CNIP]' \
         -e '1iadd address=10.0.0.0/8 list=CNIP comment=private-network' \
         -e '1iadd address=172.16.0.0/12 list=CNIP comment=private-network' \
-        -e '1iadd address=192.165.0.0/16 list=CNIP comment=private-network' \
         -e '1iadd address=192.168.0.0/16 list=CNIP comment=private-network' \
         -e '1iadd address=224.0.0.0/4 list=CNIP comment=private-network' \
         >chnroutes2.rsc
