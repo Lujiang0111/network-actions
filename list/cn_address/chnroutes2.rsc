@@ -355,6 +355,7 @@ add address=43.255.224.0/22 list=CNIP
 add address=45.12.88.0/24 list=CNIP
 add address=45.12.90.0/24 list=CNIP
 add address=45.40.192.0/18 list=CNIP
+add address=45.61.194.0/24 list=CNIP
 add address=45.61.200.0/23 list=CNIP
 add address=45.61.226.0/24 list=CNIP
 add address=45.65.20.0/22 list=CNIP
