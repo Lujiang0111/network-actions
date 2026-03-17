@@ -15,7 +15,10 @@ add address=1.45.0.0/16 list=CNIP
 add address=1.48.0.0/14 list=CNIP
 add address=1.56.0.0/13 list=CNIP
 add address=1.68.0.0/14 list=CNIP
-add address=1.80.0.0/12 list=CNIP
+add address=1.80.0.0/13 list=CNIP
+add address=1.88.0.0/14 list=CNIP
+add address=1.92.0.0/16 list=CNIP
+add address=1.94.0.0/15 list=CNIP
 add address=1.116.0.0/15 list=CNIP
 add address=1.119.0.0/17 list=CNIP
 add address=1.119.128.0/18 list=CNIP
@@ -664,7 +667,7 @@ add address=74.114.51.0/24 list=CNIP
 add address=81.23.208.0/20 list=CNIP
 add address=81.68.0.0/14 list=CNIP
 add address=81.173.18.0/23 list=CNIP
-add address=81.173.20.0/23 list=CNIP
+add address=81.173.20.0/22 list=CNIP
 add address=82.156.0.0/15 list=CNIP
 add address=87.254.207.0/24 list=CNIP
 add address=93.183.14.0/24 list=CNIP
@@ -1153,7 +1156,6 @@ add address=103.169.62.0/23 list=CNIP
 add address=103.170.4.0/23 list=CNIP
 add address=103.174.94.0/23 list=CNIP
 add address=103.179.78.0/23 list=CNIP
-add address=103.181.164.0/23 list=CNIP
 add address=103.181.234.0/24 list=CNIP
 add address=103.183.66.0/23 list=CNIP
 add address=103.183.122.0/23 list=CNIP
@@ -1722,7 +1724,8 @@ add address=115.32.64.0/19 list=CNIP
 add address=115.32.104.0/21 list=CNIP
 add address=115.32.120.0/21 list=CNIP
 add address=115.32.128.0/19 list=CNIP
-add address=115.44.0.0/14 list=CNIP
+add address=115.44.0.0/15 list=CNIP
+add address=115.46.0.0/16 list=CNIP
 add address=115.48.0.0/12 list=CNIP
 add address=115.84.0.0/18 list=CNIP
 add address=115.85.192.0/18 list=CNIP
@@ -2005,7 +2008,6 @@ add address=118.195.128.0/17 list=CNIP
 add address=118.196.0.0/16 list=CNIP
 add address=118.197.0.0/18 list=CNIP
 add address=118.197.64.0/19 list=CNIP
-add address=118.199.0.0/16 list=CNIP
 add address=118.202.0.0/15 list=CNIP
 add address=118.204.0.0/17 list=CNIP
 add address=118.212.0.0/15 list=CNIP
@@ -2886,6 +2888,7 @@ add address=202.1.112.0/23 list=CNIP
 add address=202.4.128.0/19 list=CNIP
 add address=202.4.252.0/22 list=CNIP
 add address=202.6.202.0/23 list=CNIP
+add address=202.13.71.0/24 list=CNIP
 add address=202.14.235.0/24 list=CNIP
 add address=202.14.236.0/23 list=CNIP
 add address=202.14.238.0/24 list=CNIP
