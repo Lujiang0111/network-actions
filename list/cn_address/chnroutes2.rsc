@@ -3590,7 +3590,9 @@ add address=218.98.104.0/22 list=CNIP
 add address=218.98.108.0/23 list=CNIP
 add address=218.98.111.0/24 list=CNIP
 add address=218.98.160.0/24 list=CNIP
-add address=218.98.176.0/21 list=CNIP
+add address=218.98.176.0/22 list=CNIP
+add address=218.98.180.0/23 list=CNIP
+add address=218.98.182.0/24 list=CNIP
 add address=218.98.192.0/24 list=CNIP
 add address=218.104.0.0/15 list=CNIP
 add address=218.106.0.0/16 list=CNIP
