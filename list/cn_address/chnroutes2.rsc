@@ -1999,7 +1999,10 @@ add address=118.192.70.0/24 list=CNIP
 add address=118.193.96.0/19 list=CNIP
 add address=118.194.32.0/19 list=CNIP
 add address=118.194.134.0/23 list=CNIP
-add address=118.194.240.0/21 list=CNIP
+add address=118.194.240.0/24 list=CNIP
+add address=118.194.242.0/23 list=CNIP
+add address=118.194.244.0/24 list=CNIP
+add address=118.194.246.0/23 list=CNIP
 add address=118.195.128.0/17 list=CNIP
 add address=118.196.0.0/16 list=CNIP
 add address=118.197.0.0/18 list=CNIP
@@ -2690,7 +2693,7 @@ add address=163.61.178.0/23 list=CNIP
 add address=163.61.202.0/23 list=CNIP
 add address=163.61.214.0/23 list=CNIP
 add address=163.125.0.0/16 list=CNIP
-add address=163.128.254.0/23 list=CNIP
+add address=163.128.254.0/24 list=CNIP
 add address=163.142.0.0/16 list=CNIP
 add address=163.177.0.0/16 list=CNIP
 add address=163.179.0.0/16 list=CNIP
