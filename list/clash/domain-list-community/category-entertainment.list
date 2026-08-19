@@ -693,6 +693,8 @@ DOMAIN-REGEX,(^|\.)dualstack\.apiproxy-.+\.amazonaws\.com$
 DOMAIN-REGEX,(^|\.)dualstack\.ichnaea-web-.+\.amazonaws\.com$
 DOMAIN,netflix.com.edgesuite.net
 DOMAIN-SUFFIX,nico
+DOMAIN-SUFFIX,nico.ms
+DOMAIN-SUFFIX,nicochannel.jp
 DOMAIN-SUFFIX,nicodic.jp
 DOMAIN-SUFFIX,nicomanga.jp
 DOMAIN-SUFFIX,niconico.com
