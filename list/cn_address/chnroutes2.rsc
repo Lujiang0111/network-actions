@@ -252,7 +252,7 @@ add address=43.231.170.0/24 list=CNIP
 add address=43.239.120.0/22 list=CNIP
 add address=43.239.172.0/23 list=CNIP
 add address=43.240.0.0/22 list=CNIP
-add address=43.240.56.0/21 list=CNIP
+add address=43.240.60.0/22 list=CNIP
 add address=43.240.72.0/22 list=CNIP
 add address=43.240.124.0/22 list=CNIP
 add address=43.240.128.0/22 list=CNIP
@@ -845,7 +845,6 @@ add address=103.30.151.0/24 list=CNIP
 add address=103.31.200.0/22 list=CNIP
 add address=103.35.104.0/22 list=CNIP
 add address=103.35.254.0/24 list=CNIP
-add address=103.36.28.0/22 list=CNIP
 add address=103.36.36.0/22 list=CNIP
 add address=103.36.63.0/24 list=CNIP
 add address=103.36.96.0/22 list=CNIP
@@ -987,7 +986,6 @@ add address=103.79.200.0/22 list=CNIP
 add address=103.79.228.0/23 list=CNIP
 add address=103.81.4.0/22 list=CNIP
 add address=103.81.72.0/22 list=CNIP
-add address=103.81.120.0/24 list=CNIP
 add address=103.81.123.0/24 list=CNIP
 add address=103.81.200.0/22 list=CNIP
 add address=103.82.224.0/22 list=CNIP
@@ -1541,7 +1539,6 @@ add address=111.235.180.0/23 list=CNIP
 add address=111.235.182.0/24 list=CNIP
 add address=112.0.0.0/10 list=CNIP
 add address=112.64.0.0/14 list=CNIP
-add address=112.73.96.0/19 list=CNIP
 add address=112.74.0.0/16 list=CNIP
 add address=112.80.0.0/12 list=CNIP
 add address=112.96.0.0/13 list=CNIP
@@ -2481,7 +2478,8 @@ add address=125.208.45.0/24 list=CNIP
 add address=125.208.46.0/23 list=CNIP
 add address=125.210.0.0/15 list=CNIP
 add address=125.213.32.0/20 list=CNIP
-add address=125.214.96.0/19 list=CNIP
+add address=125.214.104.0/21 list=CNIP
+add address=125.214.112.0/20 list=CNIP
 add address=125.215.36.0/23 list=CNIP
 add address=125.215.40.0/24 list=CNIP
 add address=125.215.44.0/23 list=CNIP
@@ -3642,7 +3640,6 @@ add address=218.246.32.0/22 list=CNIP
 add address=218.246.48.0/22 list=CNIP
 add address=218.246.96.0/19 list=CNIP
 add address=218.246.160.0/19 list=CNIP
-add address=218.246.192.0/19 list=CNIP
 add address=218.247.0.0/18 list=CNIP
 add address=218.247.64.0/19 list=CNIP
 add address=218.247.128.0/17 list=CNIP
