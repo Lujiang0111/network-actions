@@ -1020,6 +1020,7 @@ add address=103.98.44.0/22 list=CNIP
 add address=103.98.125.0/24 list=CNIP
 add address=103.98.127.0/24 list=CNIP
 add address=103.98.220.0/22 list=CNIP
+add address=103.98.224.0/22 list=CNIP
 add address=103.98.248.0/23 list=CNIP
 add address=103.98.252.0/22 list=CNIP
 add address=103.99.178.0/24 list=CNIP
