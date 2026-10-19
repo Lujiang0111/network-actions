@@ -1940,8 +1940,6 @@ add address=118.72.0.0/13 list=CNIP
 add address=118.80.0.0/15 list=CNIP
 add address=118.84.0.0/15 list=CNIP
 add address=118.88.32.0/19 list=CNIP
-add address=118.88.64.0/18 list=CNIP
-add address=118.88.128.0/17 list=CNIP
 add address=118.89.0.0/16 list=CNIP
 add address=118.102.16.0/20 list=CNIP
 add address=118.103.164.0/22 list=CNIP
@@ -3402,7 +3400,9 @@ add address=211.97.160.0/21 list=CNIP
 add address=211.97.176.0/20 list=CNIP
 add address=211.97.192.0/18 list=CNIP
 add address=211.98.0.0/16 list=CNIP
-add address=211.99.8.0/21 list=CNIP
+add address=211.99.8.0/22 list=CNIP
+add address=211.99.12.0/24 list=CNIP
+add address=211.99.14.0/23 list=CNIP
 add address=211.99.16.0/23 list=CNIP
 add address=211.99.25.0/24 list=CNIP
 add address=211.99.26.0/24 list=CNIP
