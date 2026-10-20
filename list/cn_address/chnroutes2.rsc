@@ -606,6 +606,7 @@ add address=60.63.0.0/16 list=CNIP
 add address=60.160.0.0/11 list=CNIP
 add address=60.194.0.0/15 list=CNIP
 add address=60.200.0.0/24 list=CNIP
+add address=60.200.35.0/24 list=CNIP
 add address=60.204.0.0/14 list=CNIP
 add address=60.208.0.0/12 list=CNIP
 add address=60.232.132.0/23 list=CNIP
